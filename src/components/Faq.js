@@ -43,10 +43,12 @@ const faq = () => {
               allowMultiple
               key={faqs.slno}
               textAlign="left"
-              bg="#04bb66"
-              _hover={{ bg: "#00da62" }}
+              bg="#54555c"
+              _hover={{ bg: "#c8c9d6", color: "#36363a" }}
               color="white"
               my={2}
+              borderRadius={"25px"}
+              borderColor="white"
             >
               <AccordionItem>
                 <h2>
@@ -57,7 +59,12 @@ const faq = () => {
                     <AccordionIcon />
                   </AccordionButton>
                 </h2>
-                <AccordionPanel pb={4} bg="#2dff8c" color="black">
+                <AccordionPanel
+                  pb={4}
+                  bg="#898a9b"
+                  color="white"
+                  borderRadius={"25px"}
+                >
                   {faqs.ans}
                 </AccordionPanel>
               </AccordionItem>
