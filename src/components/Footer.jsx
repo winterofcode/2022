@@ -59,9 +59,9 @@ export default function Footer() {
       color={'#E2E8F0'}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
-          columns={{ sm: '1', md: '3' }}
-          spacing={8}>
-          <Stack spacing={6}>
+          templateColumns={{ sm: '2fr', md: '2fr 1fr 1fr' }}
+          spacing={'8'}>
+          <Stack spacing={6} align={{base: 'center', md: 'flex-start'}}>
             <HStack >
               <Image src={logo} height={45} width={45}></Image>
               <Text
@@ -70,8 +70,8 @@ export default function Footer() {
                     Winter of Code
               </Text>
             </HStack>
-            <Text fontSize={'sm'} color={'rgb(160 160 160)'}>
-            The Winter of Code is a program aimed to increase participation for the Google Summer of Code program among students in colleges and universities.
+            <Text fontSize={'sm'} color={'rgb(160 160 160)'} textAlign={{base: 'center', md: 'initial'}}>
+              The Winter of Code is a program aimed to increase participation for the Google Summer of Code program among students in colleges and universities.
             </Text>
             <Stack direction={'row'} spacing={6}>
               <SocialButton label={'Instagram'} href={'https://www.instagram.com/winterofcode/'}>
@@ -88,7 +88,7 @@ export default function Footer() {
                 © Winter of Code 2022
             </Text>
           </Stack>
-          <Stack align={'flex-start'}>
+          <Stack align={{base: 'center', md: 'flex-start'}}>
             <ListHeader>Resources</ListHeader>
             <Link _hover={{
               textDecoration: 'none',
@@ -111,7 +111,7 @@ export default function Footer() {
               color: '#6188ff',
             }} href={'https://gcp2021.dscnsec.com/'} color={'rgb(160 160 160)'} fontSize={'15px'}>30 Days of Google Cloud</Link>
           </Stack>
-          <Stack align={'flex-start'}>
+          <Stack align={{base: 'center', md: 'flex-start'}}>
             <ListHeader>DSC NSEC Handles</ListHeader>
             <Link _hover={{
               textDecoration: 'none',
