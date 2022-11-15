@@ -1,0 +1,11 @@
+* {
+  box-sizing: border-box;
+}
+
+.vertical-timeline-element-content{
+  transition-duration: 200ms;
+}
+.vertical-timeline-element-content:hover {
+  transition-duration: 200ms;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
