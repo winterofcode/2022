@@ -9,8 +9,6 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import Faq from "./components/Faq";
-import About from "./components/About";
 
 const Home = React.lazy(() => import("./views/Home"));
 const Team = React.lazy(() => import("./views/Team"));
