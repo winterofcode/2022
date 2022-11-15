@@ -1,6 +1,19 @@
-#faqs{
-    background-image: linear-gradient(rgba(255,255,255,.5), rgba(255,255,255,.5)),url("./components/Faq\ Data/faqbg.jpg");
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;    
+#faqs {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("./components/Faq\ Data/faqbg.jpg");
+  background-position: center;
+  background-size: 80%;
+  background-repeat: no-repeat;
+}
+
+.parallax {
+  position: relative;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  background-attachment: fixed;
+  display: block;
+  background-image: url(https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/12/Neon-Tanjim.gif?fit=750%2C354&quality=80&strip=all&ssl=1)!important
 }

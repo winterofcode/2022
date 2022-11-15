@@ -5,7 +5,7 @@ import Statistics from "./About Data/Statistics";
 const About = () => {
   return (
     <>
-      {/* <Program /> */}
+      <Program />
       <Statistics />
     </>
   );
