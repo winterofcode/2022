@@ -5,7 +5,6 @@ const Statistics = () => {
   return (
     <Box      
       className='parallax'
-
       bgColor='rgba(0,0,0,0.7)'
       bgBlendMode={"overlay"}      
       display="flex"
@@ -16,8 +15,8 @@ const Statistics = () => {
       
     >
       <Box
-        p={10}
-        pb={5}
+        p={5}
+        pb={3}
         display="flex"
         flexDir="column"
         alignItems="center"
@@ -33,8 +32,8 @@ const Statistics = () => {
         </Text>
       </Box>
       <Box
-        p={10}
-        pb={5}
+        p={5}
+        pb={3}
         display="flex"
         flexDir="column"
         alignItems="center"
@@ -50,8 +49,8 @@ const Statistics = () => {
         </Text>
       </Box>
       <Box
-        p={10}
-        pb={5}
+        p={5}
+        pb={3}
         display="flex"
         flexDir="column"
         alignItems="center"

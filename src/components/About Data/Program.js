@@ -6,7 +6,7 @@ const Program = () => {
     <Box
       bgImage="linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(https://media.giphy.com/media/paYbRu5nLkosE/giphy.gif)"
       display="flex"
-      color='white'
+      color="white"
     >
       <Box p={5} width="75%" m={7}>
         <Text fontSize="5xl" as="b">
@@ -33,9 +33,12 @@ const Program = () => {
           in your formative years. Above all, we hope you get encouraged into
           the world of open source and develop more code for the benefit of all.
         </Text>
-        <br />
       </Box>
-      <Image src={require("./programbg.png")} width={{base:"30%", lg:"28%"}} opacity={"0.8"} />
+      <Image
+        src={require("./programbg.png")}
+        width={{ base: "30%", lg: "28%" }}
+        opacity={"0.8"}
+      />
     </Box>
   );
 };
