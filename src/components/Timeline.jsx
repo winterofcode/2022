@@ -114,7 +114,8 @@ export default function Timeline() {
         <VerticalTimeline lineColor='black' layout='2-columns' >
             {timelineCardData.map(cardItem =>{
                 return (
-                    <VerticalTimelineElement
+                    <VerticalTimelineElement 
+                    key={cardItem.id}
                     className="vertical-timeline-element--education"
                     contentStyle={{ borderTop: `5px solid ${cardItem.bgIconColor}`, color: 'black' }}    // dont delete this, will be needed to update.
                     contentArrowStyle={{ borderRight: `7px solid  ${cardItem.bgIconColor}` }}  // dont delete this, will be needed to update.
