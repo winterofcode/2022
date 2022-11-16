@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box, Center, Image, Flex, Badge, Text, VStack, Stack, Heading, IconButton } from "@chakra-ui/react";
-import { FaLinkedin, FaGithub, FaInstagram, FaTwitter } from "react-icons/fa";
-import { Fade, ScaleFade, Slide, SlideFade } from '@chakra-ui/react'
+import { Flex, Text, Stack, Heading, IconButton } from "@chakra-ui/react";
+import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { ScaleFade } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react';
 import { data } from './data/data'
 import "./data/teambg.css"
@@ -106,7 +106,6 @@ const Cards = ()=>{
                         <ScaleFade initialScale={0.9} in={true}>
                             <Stack marginBottom='1'>
                                 <Flex className='floating' gap={{base: "10px", sm:"0"}} boxShadow='2xl' p='6' roundedRight={index%2===0 ? '2xl': '0'} roundedLeft={index%2!==0 ? '2xl': '0'} bg='whiteAlpha.100' width={{base: '85vw', sm: '450px'}} alignItems='center' direction={{base: 'column', sm: index%2!==0?'row' : 'row-reverse'}} justifyContent='space-between' my='5' backdropFilter='blur(10px)'>
-                                    {/* <Image boxSize={{base: "120px", md: "170px"}} objectFit="cover" src={img} alt='user' borderRadius='full' transition='all 0.3s'/> */}
                                     <ImageLoad src={ img } boxSize={{base: "120px", md: "170px"}} objectFit="cover" alt='user' borderRadius='full' transition='all 0.3s' />
                                     <Flex direction="column" alignItems={{base: "center", sm: "initial"}} paddingLeft={{base: "0", sm: "6"}} width='60%'>
                                         <Text textAlign={{base: "center", sm: "left"}} fontSize='3xl'>{name}</Text>
