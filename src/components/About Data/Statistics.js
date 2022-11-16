@@ -6,14 +6,14 @@ const Statistics = () => {
     <Box      
       className='parallax'
 
-      bgColor='rgba(0,0,0,0.6)'
+      bgColor='rgba(0,0,0,0.7)'
       bgBlendMode={"overlay"}      
       display="flex"
       flexDir={{base: 'column', md: 'row' , lg: 'row'}}
       alignItems="center"
       justifyContent="space-evenly"
       color='white'
-      style={{textShadow: "10px 7px 5px black"}}
+      
     >
       <Box
         p={10}
@@ -21,14 +21,14 @@ const Statistics = () => {
         display="flex"
         flexDir="column"
         alignItems="center"
-        justifyContent="space-between"
+        justifyContent="space-around"
       >
-        <i className="fa-solid fa-user fa-4x"></i>
+        <i className="fa-solid fa-user fa-3x"></i>
         <br />
-        <Text as="b" fontSize="5xl">
+        <Text as="b" fontSize="4xl">
           400+
         </Text>
-        <Text as="b" fontSize="3xl">
+        <Text  fontSize="3xl">
           Students
         </Text>
       </Box>
@@ -40,12 +40,12 @@ const Statistics = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <i className="fa-solid fa-building fa-4x"></i>
+        <i className="fa-solid fa-building fa-3x"></i>
         <br />
-        <Text as="b" fontSize="5xl">
+        <Text as="b" fontSize="4xl">
           10+
         </Text>
-        <Text as="b" fontSize="3xl">
+        <Text fontSize="3xl">
           Organisations
         </Text>
       </Box>
@@ -57,12 +57,12 @@ const Statistics = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <i className="fa-solid fa-user-tie fa-4x"></i>        
+        <i className="fa-solid fa-user-tie fa-3x"></i>        
         <br />
-        <Text as="b" fontSize="5xl">
+        <Text as="b" fontSize="4xl">
           40+
         </Text>
-        <Text as="b" fontSize="3xl">
+        <Text fontSize="3xl">
           Mentors
         </Text>
       </Box>

@@ -35,7 +35,7 @@ const Program = () => {
         </Text>
         <br />
       </Box>
-      <Image src={require("./programbg.jpg")} width={{base:"30%", lg:"28%"}} opacity={"0.8"} />
+      <Image src={require("./programbg.png")} width={{base:"30%", lg:"28%"}} opacity={"0.8"} />
     </Box>
   );
 };
