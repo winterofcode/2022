@@ -120,19 +120,19 @@ const Cards = ()=>{
                                                 if (isPres === 'GIT'){
                                                     return(
                                                         <Link href={Slink} isExternal>
-                                                            <IconButton aria-label='Github Link' fontSize='23px' variant='outline' colorScheme="purple" border="none" icon={<FaGithub />} />
+                                                            <IconButton aria-label='Github Link' fontSize='25px' variant='outline' colorScheme="purple" border="none" icon={<FaGithub />} />
                                                         </Link>
                                                     )
                                                 } else if (isPres === 'LINKEDIN'){
                                                     return(
                                                         <Link href={Slink} isExternal>
-                                                            <IconButton aria-label='LinkedIn Link' fontSize='23px' variant='outline' colorScheme="teal" border="none" icon={<FaLinkedin />} />
+                                                            <IconButton aria-label='LinkedIn Link' fontSize='25px' variant='outline' colorScheme="teal" border="none" icon={<FaLinkedin />} />
                                                         </Link>
                                                     )
                                                 } else if (isPres === 'TWIT'){
                                                     return(
                                                         <Link href={Slink} isExternal>
-                                                            <IconButton aria-label='Twitter Link' fontSize='23px' variant='outline' colorScheme="twitter" border="none" icon={<FaTwitter />} />
+                                                            <IconButton aria-label='Twitter Link' fontSize='25px' variant='outline' colorScheme="twitter" border="none" icon={<FaTwitter />} />
                                                         </Link>
                                                     )
                                                 }
