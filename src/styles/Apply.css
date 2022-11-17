@@ -1,0 +1,56 @@
+.apply-section {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(to right, #051343 0%, #0d2c8f 0%, #051343 100%);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apply-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.timeline {
+    color: gold;
+}
+
+.timeline-text-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    text-align: center;
+}
+
+.apply-btn {
+    background: linear-gradient(to right, #054a8f 0%, #054a8f 0%, #0655a5 100%) !important;
+    border-radius: 12px !important;
+}
+
+@media (max-width: 600px) {
+    .apply-btns {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apply-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .timeline-text-section {
+        display: flex;
+        flex-direction: column;
+    }
+}
