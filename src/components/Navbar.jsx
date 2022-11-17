@@ -5,49 +5,32 @@ import {
   Link,
   IconButton,
   useDisclosure,
-  useColorModeValue,
   Stack,
   Image,
   Text,
 } from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, AddIcon } from '@chakra-ui/icons';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 import logo from '../assets/org-logo.png';
-
-const Links = ['GDSC NSEC', 'Team', 'Organizations', 'FAQ', 'Contact Us'];
-
-const NavLink = ({ children }) => (
-  <Link
-    px={2}
-    py={1}
-    rounded={'md'}
-    _hover={{
-      textDecoration: 'none',
-      bg: useColorModeValue('gray.200', 'gray.700'),
-    }}
-    href={'#'}>
-    {children}
-  </Link>
-);
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   return (
     <>
-      <Box bg={'blackAlpha.500'} px={{base: '4', md: '20'}}>
+      <Box bg={'gray.900'} px={{base: '4', md: '20'}} pos='sticky' top={'0'} backdropFilter='auto'>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
-            icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon/>}
             aria-label={'Open Menu'}
             display={{ md: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
             <HStack>
-              <Image src={logo} h={'45'} w={'45'}></Image>
-              <Text fontSize={'28px'} fontWeight={'700'}>Winter of Code</Text>
+              <Image src={logo} h={'45'} w={'45'} ></Image>
+              <Text fontSize={'28px'} fontWeight={'700'} color='white'>Winter of Code</Text>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -55,9 +38,71 @@ export default function Navbar() {
               as={'nav'}
               spacing={10}
               display={{ base: 'none', md: 'flex' }}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+                <Link
+                  px={2}
+                  py={1}
+                  href='https://dscnsec.com/'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    bg: '#4285F4',
+                  }}>
+                  GDSC NSEC
+                </Link>
+                <Link
+                  px={2}
+                  py={1}
+                  href='https://winterofcode.com/organisers'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    bg: '#4285F4',
+                  }}>
+                  Team
+                </Link>
+                <Link
+                  px={2}
+                  py={1}
+                  href='#organizations'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    bg: '#4285F4',
+                  }}>
+                  Organizations
+                </Link>
+                <Link
+                  px={2}
+                  py={1}
+                  href='#faq'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    bg: '#4285F4',
+                  }}>
+                  FAQ
+                </Link>
+                <Link
+                  px={2}
+                  py={1}
+                  href='#contact'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    bg: '#4285F4',
+                  }}>
+                  Contact Us
+                </Link>
             </HStack>
           </Flex>
         </Flex>
@@ -65,13 +110,77 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-              {Links.map((link) => (
-                <NavLink key={link}>{link}</NavLink>
-              ))}
+                <Link
+                  px={2}
+                  py={1}
+                  href='https://dscnsec.com/'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: '#4285F4',
+                  }}>
+                  GDSC NSEC
+                </Link>
+                <Link
+                  px={2}
+                  py={1}
+                  href='https://winterofcode.com/organisers'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: '#4285F4',
+                  }}>
+                  Team
+                </Link>
+                <Link
+                  px={2}
+                  py={1}
+                  href='#organizations'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: '#4285F4',
+                  }}>
+                  Organizations
+                </Link>
+                <Link
+                  px={2}
+                  py={1}
+                  href='#faq'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: '#4285F4',
+                  }}>
+                  FAQ
+                </Link>
+                <Link
+                  px={2}
+                  py={1}
+                  href='#contact'
+                  fontWeight={'500'}
+                  rounded={'md'}
+                  color='white'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: '#4285F4',
+                  }}>
+                  Contact Us
+                </Link>
             </Stack>
           </Box>
         ) : null}
       </Box>
+      <Stack spacing={100}>
+      </Stack>
     </>
   );
 }
