@@ -3,7 +3,7 @@
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("./components/Faq\ Data/faqbg.jpg");
+    url("../src//assets/faqbg.jpg");
   background-position: center;
   background-size: 80%;
   background-repeat: no-repeat;
@@ -15,5 +15,9 @@
   background-size: cover;
   background-attachment: fixed;
   display: block;
-  background-image: url('../public/statisticsbg.webp')!important
+  background-image: url('../src/assets/statisticsbg.webp')!important
+}
+
+.func{
+  background-color: rgba(24, 9, 82, 0.164);
 }

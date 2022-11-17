@@ -35,7 +35,7 @@ const faq = () => {
           >
             FAQs
           </Text>
-          <Image src={require("./Faq Data/head.png")} width="400px" />
+          <Image src={require("../assets/head.png")} width="400px" />
         </Box>
         <Box mt={3}>
           {data.map((faqs) => (

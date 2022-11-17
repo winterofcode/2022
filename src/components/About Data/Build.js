@@ -1,21 +1,23 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
-import programbg from "./programbg.webp";
+import programbg from "../../assets/programbg.webp";
 
 const Build = () => {
   return (
     <Box
       bgImage={`linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(${programbg})`}
-      bgPos='center'
+      bgRepeat='no-repeat'
+      bgSize='cover'
       color="white"
+      
     >
-      <Box p={5} m={7} mt={0}>
+      <Box p={5} m={7} mt={0} >
         <Text fontSize="3xl" as="b">
           Let's Build Something Awesome Together
         </Text>
         <br />
 
-        <Text as="b" color="gray.500">
+        <Text as="b" color="gray.300">
           Developer Students Club of NSEC brings to you Winter of Code which is
           a month-long extravaganza of Open Source contribution, bringing
           together students, organisations and mentors to build amazing projects
@@ -24,14 +26,14 @@ const Build = () => {
         </Text>
       </Box>
 
-      <Box display="flex" textAlign="justify" flexDir={{base: 'column', md: 'row' , lg: 'row'}}>
+      <Box display="flex" flexDir={{base: 'column', md: 'row' , lg: 'row'}}>
         <Box p={5} m={7} mt={0}>
           <Text fontSize="3xl" as="b">
             Students
           </Text>
           <br />
 
-          <Text as="b" color="gray.500">
+          <Text as="b" color="gray.300">
             Students who are interested can register for the Winter of Code by
             filling a form. Students who are selected will work with mentors of
             the organisation that they are accepted for. If accepted, students
@@ -50,7 +52,7 @@ const Build = () => {
           </Text>
           <br />
 
-          <Text as="b" color="gray.500">
+          <Text as="b" color="gray.300">
             Open source organisations can apply to be mentor organisations. Once
             accepted, organisations discuss possible ideas with students and
             then decide on the proposals they wish to mentor for the winter.
@@ -68,7 +70,7 @@ const Build = () => {
           </Text>
           <br />
 
-          <Text as="b" color="gray.500">
+          <Text as="b" color="gray.300">
             Mentors guide the students throughout their projects and review
             their code samples multiple times. They provide valuable feedback
             and suggest possible improvements to the code. They also determine
