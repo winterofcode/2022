@@ -1,6 +1,7 @@
 import React from 'react'
 import { Flex, Text, Stack, Heading, IconButton } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
+import { VscGithubAlt } from "react-icons/vsc";
 import { ScaleFade } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react';
 import { data } from './data/data'
@@ -119,19 +120,19 @@ const Cards = ()=>{
                                                 if (isPres === 'GIT'){
                                                     return(
                                                         <Link href={Slink} isExternal>
-                                                            <IconButton aria-label='Search database' icon={<FaGithub />} />
+                                                            <IconButton aria-label='Github Link' fontSize='25px' variant='outline' colorScheme="purple" border="none" icon={<FaGithub />} />
                                                         </Link>
                                                     )
                                                 } else if (isPres === 'LINKEDIN'){
                                                     return(
                                                         <Link href={Slink} isExternal>
-                                                            <IconButton aria-label='Search database' icon={<FaLinkedin />} />
+                                                            <IconButton aria-label='LinkedIn Link' fontSize='25px' variant='outline' colorScheme="teal" border="none" icon={<FaLinkedin />} />
                                                         </Link>
                                                     )
                                                 } else if (isPres === 'TWIT'){
                                                     return(
                                                         <Link href={Slink} isExternal>
-                                                            <IconButton bgGradient='linear(white.100 0%, grey.100 25%, black.100 50%)' aria-label='Search database' icon={<FaTwitter />} />
+                                                            <IconButton aria-label='Twitter Link' fontSize='25px' variant='outline' colorScheme="twitter" border="none" icon={<FaTwitter />} />
                                                         </Link>
                                                     )
                                                 }
