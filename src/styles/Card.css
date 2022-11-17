@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.card-body {
+    /* width: 33.33%; */
+    width: 300px;
+    height: 275px;
+    background-color: #ffff;
+    /* background-color: #122936; */
+    border-radius: 20px;
+    overflow: hidden;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.card-body:hover {
+    transform: scale(0.9);
+    transition: 0.5s;
+}
+
+.card-body::before {
+    content: '';
+    position: absolute;
+    top: -70%;
+    width: 100%;
+    height: 100%;
+    background: #087cf8;
+    transform: skewY(200deg);
+    transition: 0.5s;
+}
+
+/* .card-body:hover::before {
+    top: -70%;
+    transform: skewY(-200deg);
+    transition: 0.5s;
+} */
+
+.card-body::after {
+    content: 'WOC';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: 700;
+    font-size: 7em;
+    color: rgba(201, 196, 196, 0.1);
+}
+
+
+
+.card-logo img {
+    position: relative;
+    z-index: 100;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px !important;
+}
+
+
+.card-title {
+    position: relative;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: rgb(3, 3, 3);
+    margin: 7.5px;
+}
+
+.number_of_projects {
+    position: relative;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.view-project {
+    width: 120px;
+    height: 44px;
+    border-radius: 7.5px;
+    margin-top: 20px;
+    border: none;
+
+    color: white;
+    box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
+    background-image: linear-gradient(to right, #051343 0%, #0d2c8f 0%, #051343 100%) !important;
+    transition: 0.5s;
+
+}
+
+.card-body::before {
+    content: 'WOC';
+    font-size: 2.0rem;
+    font-weight: 600;
+
+
+}
