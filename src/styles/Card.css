@@ -83,7 +83,7 @@
 
     color: white;
     box-shadow: 0 4px 6px rgb(50 50 93 / 11%), 0 1px 3px rgb(0 0 0 / 8%);
-    background-image: linear-gradient(to right, #051343 0%, #0d2c8f 0%, #051343 100%) !important;
+    background: linear-gradient(to right, #054a8f 0%, #054a8f 0%, #0655a5 100%) !important;
     transition: 0.5s;
 
 }
