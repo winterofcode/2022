@@ -1,14 +1,28 @@
 import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
+import programbg from "./programbg.webp";
 
 const Program = () => {
   return (
     <Box
-      bgImage="linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(https://media.giphy.com/media/paYbRu5nLkosE/giphy.gif)"
+      bgImage={`linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(${programbg})`}
       display="flex"
+      flexDir={{base: 'column', md: 'row' , lg: 'row'}}
       color="white"
-    >
-      <Box p={5} width="75%" m={7}>
+      bgPos={'center'}      
+      alignItems='center'
+      alignContent={'center'}
+    >    
+      <Box
+        m={7}
+        p={5}
+        px={8}        
+        maxW={'1100px'}
+        backdropFilter={"saturate(230%) blur(8px)"}
+        bg="rgba(255,255,255,0.1)"
+        borderRadius='25px'
+        overflow='hidden'        
+      >        
         <Text fontSize="5xl" as="b">
           About The Program
         </Text>
@@ -34,11 +48,7 @@ const Program = () => {
           the world of open source and develop more code for the benefit of all.
         </Text>
       </Box>
-      <Image
-        src={require("./programbg.png")}
-        width={{ base: "30%", lg: "28%" }}
-        opacity={"0.8"}
-      />
+      
     </Box>
   );
 };

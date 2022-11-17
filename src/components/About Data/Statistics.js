@@ -1,5 +1,8 @@
-import { Box, Text } from "@chakra-ui/react";
 import React from "react";
+import { Box, Text } from "@chakra-ui/react";
+import {FiUser} from 'react-icons/fi'
+import {ImUserTie} from 'react-icons/im'
+import {VscOrganization} from 'react-icons/vsc'
 
 const Statistics = () => {
   return (
@@ -11,18 +14,17 @@ const Statistics = () => {
       flexDir={{base: 'column', md: 'row' , lg: 'row'}}
       alignItems="center"
       justifyContent="space-evenly"
-      color='white'
-      
+      color='white'      
     >
       <Box
-        p={5}
-        pb={3}
+        px={5}
+        py={10}
         display="flex"
         flexDir="column"
         alignItems="center"
         justifyContent="space-around"
-      >
-        <i className="fa-solid fa-user fa-3x"></i>
+      >        
+        <FiUser size={'70px'} />
         <br />
         <Text as="b" fontSize="4xl">
           400+
@@ -39,7 +41,7 @@ const Statistics = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <i className="fa-solid fa-building fa-3x"></i>
+        <VscOrganization size={'70px'} />
         <br />
         <Text as="b" fontSize="4xl">
           10+
@@ -56,7 +58,7 @@ const Statistics = () => {
         alignItems="center"
         justifyContent="space-between"
       >
-        <i className="fa-solid fa-user-tie fa-3x"></i>        
+        <ImUserTie size={'70px'} />    
         <br />
         <Text as="b" fontSize="4xl">
           40+

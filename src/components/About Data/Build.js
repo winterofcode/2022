@@ -1,10 +1,12 @@
 import React from "react";
 import { Box, Text } from "@chakra-ui/react";
+import programbg from "./programbg.webp";
 
 const Build = () => {
   return (
     <Box
-      bgImage="linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(https://media.giphy.com/media/paYbRu5nLkosE/giphy.gif)"
+      bgImage={`linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(${programbg})`}
+      bgPos='center'
       color="white"
     >
       <Box p={5} m={7} mt={0}>

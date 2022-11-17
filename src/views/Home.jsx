@@ -7,7 +7,7 @@ const Home = () => {
     <>
     {/* Fontawesome CDN used */}
       <About />
-      <Faq />
+      {/* <Faq /> */}
     </>
   );
 };
