@@ -8,7 +8,7 @@ const Loading = () => {
                <Box className="container">
                     <Box className="glitch" data-text="WOC">WOC</Box>
                     <Box className="glow">W O C</Box>
-                    <p className="subtitle">WINTER OF CODE</p>
+                    <p className="subtitle"><span>WINTER </span><span> OF </span><span> CODE </span></p>
                </Box>
                <Box className="scanlines"></Box>
 
