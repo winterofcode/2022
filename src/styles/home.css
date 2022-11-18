@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Bubbles');
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #FEDCC8;
+}
+
+.home {
+    position: relative;
+}
+
+.parallax {
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin-left: -50vw;
+    filter: hue-rotate(-150deg);
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+}
+
+.parallax__layer img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    height: 90%;
+    /* transform: scale(2); */
+}
+
+.parallax__cover {
+    background: #2D112B;
+    display: block;
+    position: absolute;
+    top: calc(100%);
+    left: 0;
+    right: 0;
+    height: 2000px;
+    z-index: 2;
+}
+
+.parallax__layer__0 {
+    -webkit-transform: translateZ(-300px) scale(4);
+    transform: translateZ(-300px) scale(4);
+}
+
+.parallax__layer__1 {
+    -webkit-transform: translateZ(-250px) scale(3.5);
+    transform: translateZ(-250px) scale(3.5);
+}
+
+.parallax__layer__2 {
+    -webkit-transform: translateZ(-200px) scale(3);
+    transform: translateZ(-200px) scale(3);
+}
+
+.parallax__layer__3 {
+    -webkit-transform: translateZ(-150px) scale(2.5);
+    transform: translateZ(-150px) scale(2.5);
+}
+
+.parallax__layer__4 {
+    -webkit-transform: translateZ(-100px) scale(2);
+    transform: translateZ(-100px) scale(2);
+}
+
+.parallax__layer__5 {
+    -webkit-transform: translateZ(-50px) scale(1.5);
+    transform: translateZ(-50px) scale(1.5);
+}
+
+.parallax__layer__6 {
+    -webkit-transform: translateZ(0px) scale(1);
+    transform: translateZ(0px) scale(1);
+}
+
+.title {
+    position: absolute;
+    width: 70vw;
+    height: 219px;
+
+    font-family: 'Rubik Bubbles';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6rem;
+    line-height: 152px;
+    color: lightblue;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    top: 30vh;
+    left: 5vw;
+    z-index: 5;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
+}
+
+.registration-btn {
+    box-sizing: border-box;
+    top: 52vh;
+    left: 6vw;
+    position: absolute;
+    width: 23vw;
+    height: 70px;
+
+    /* background: lightslategra; */
+    border: 1px solid grey;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: lightblue;
+    font-size: 3rem;
+    font-weight: 500;
+    font-family: 'Creepster';
+    z-index: 3;
+    /* cursor: pointer; */
+}
+
+@media screen and (max-width: 1210px) {
+    .parallax__layer img {
+        height: 60%;
+    }
+
+    .title {
+        width: 90vw;
+        font-size: 6rem;
+        text-align: center;
+        color: lightblue;
+        margin-bottom: 1em;
+        line-height: 120px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: red;
+    }
+
+    .registration-btn {
+        width: 40vw;
+        left: 30vw;
+    }
+}
+
+@media screen and (max-width: 809px) {
+    .registration-btn {
+        top: 60vh;
+        width: 60vw;
+        left: 20%;
+        border: 1px solid white;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .parallax__layer img {
+        height: 60%;
+    }
+
+    .parallax {
+        margin-left: -49vw;
+    }
+
+    .registration-btn {
+        width: 80vw;
+        left: 10vw;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .title {
+        font-size: 3rem;
+        line-height: 80px;
+    }
+
+    .registration-btn {
+        font-size: 2rem;
+    }
+}
