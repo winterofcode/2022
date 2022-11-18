@@ -8,6 +8,7 @@ import {
   Stack,
   Image,
   Text,
+  Collapse,
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
@@ -29,8 +30,8 @@ export default function Navbar() {
           />
           <HStack spacing={8} alignItems={'center'}>
             <HStack>
-              <Image src={logo} h={'45'} w={'45'} ></Image>
-              <Text fontSize={'28px'} fontWeight={'700'} color='white'>Winter of Code</Text>
+              <Image src={logo} h={'45'} w={'45'}></Image>
+              <Link fontSize={'28px'} fontWeight={'700'} color='white' style={{ textDecoration: 'none' }} href='/'>Winter of Code</Link>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
