@@ -8,47 +8,41 @@ import {
   Box,
   Container,
   Text,
-  Image,
 } from "@chakra-ui/react";
 import data from "./Faq Data/faqData";
 
 const faq = () => {
   return (
     <div id="faqs">
-      <Container
-        my={5}
-        maxW="container.sm"
+      <Container        
+        maxW="container.m"
         textAlign="center"
         display="flex"
         alignItems="center"
         flexDir="column"
         justifyContent="center"
       >
-        <Box position="relative">
+        <Box >
           <Text
             as="b"
             fontSize="6xl"
             textAlign="center"
-            position="absolute"
-            left="150px"
-            top="25px"
+            color={'white'}
           >
             FAQs
           </Text>
-          <Image src={require("../assets/head.png")} width="400px" />
         </Box>
-        <Box mt={3}>
+        <Box my={5} >
           {data.map((faqs) => (
             <Accordion
               allowMultiple
               key={faqs.slno}
               textAlign="left"
-              bg="#54555c"
-              _hover={{ bg: "#c8c9d6", color: "#36363a" }}
+              bg="#4444af"
+              _hover={{ bg: "#3c3cfa" }}
               color="white"
               my={2}
-              borderRadius={"25px"}
-              borderColor="white"
+              
             >
               <AccordionItem>
                 <h2>
@@ -61,9 +55,8 @@ const faq = () => {
                 </h2>
                 <AccordionPanel
                   pb={4}
-                  bg="#898a9b"
+                  bg="#6262f0"
                   color="white"
-                  borderRadius={"25px"}
                 >
                   {faqs.ans}
                 </AccordionPanel>

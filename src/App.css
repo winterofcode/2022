@@ -1,12 +1,5 @@
 #faqs {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("../src//assets/faqbg.jpg");
-  background-position: center;
-  background-size: 80%;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #030a4d , #02023b);
 }
 
 .parallax {
@@ -18,6 +11,7 @@
   background-image: url('../src/assets/statisticsbg.webp')!important
 }
 
-.func{
-  background-color: rgba(24, 9, 82, 0.164);
+:focus {
+  outline: none;
+  box-shadow: none;
 }
