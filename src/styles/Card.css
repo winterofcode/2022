@@ -19,11 +19,11 @@
     justify-content: center;
     align-items: center;
     position: relative;
-    transition: 0.5s linear;
+    transition: 0.2s linear;
 }
 
 .card-body:hover {
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 .card-body::before {
