@@ -25,7 +25,7 @@ export default function Navbar() {
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon/>}
             aria-label={'Open Menu'}
-            display={{ md: 'none' }}
+            display={{ lg: 'none' }}
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={'center'}>
@@ -37,8 +37,8 @@ export default function Navbar() {
           <Flex alignItems={'center'}>
             <HStack
               as={'nav'}
-              spacing={10}
-              display={{ base: 'none', md: 'flex' }}>
+              spacing={7}
+              display={{ base: 'none', lg: 'flex' }}>
                 <Link
                   px={2}
                   py={1}
@@ -55,7 +55,7 @@ export default function Navbar() {
                 <Link
                   px={2}
                   py={1}
-                  href='https://winterofcode.com/organisers'
+                  href='/organisers'
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'
@@ -127,7 +127,7 @@ export default function Navbar() {
                 <Link
                   px={2}
                   py={1}
-                  href='https://winterofcode.com/organisers'
+                  href='organisers'
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'
