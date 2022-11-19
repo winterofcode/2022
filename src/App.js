@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import "./App.css";
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,8 +14,14 @@ const Home = React.lazy(() => import("./views/Home"));
 const Team = React.lazy(() => import("./views/Team"));
 
 function App() {
+
+    const config = {
+        initialColorMode: 'dark',
+    }
+    const theme = extendTheme({ config })
+
     return (
-        <ChakraProvider>
+        <ChakraProvider initialColorMode={theme.config.initialColorMode}>
             <Router>
                 <Navbar />
                 <Suspense>
