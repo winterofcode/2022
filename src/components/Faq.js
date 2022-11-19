@@ -15,7 +15,7 @@ const faq = () => {
   return (
     <div id="faqs">
       <Container        
-        maxW="container.m"
+        maxW="container.sm"
         textAlign="center"
         display="flex"
         alignItems="center"

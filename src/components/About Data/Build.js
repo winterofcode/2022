@@ -8,6 +8,9 @@ const Build = () => {
       bgImage={`linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(${programbg})`}
       bgRepeat='no-repeat'
       bgSize='cover'
+      bgPosition='center'
+      bgColor="rgba(22, 22, 22, 0.589)"
+      bgBlendMode={'overlay'}
       color="white"
       
     >
