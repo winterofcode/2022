@@ -59,6 +59,9 @@ export default function Navbar() {
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'
+                  onClick={() => {
+                    window.scrollTo(0, 0)
+                  }}
                   _hover={{
                     textDecoration: 'none',
                     bg: '#4285F4',
