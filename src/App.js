@@ -11,8 +11,8 @@ const Team = React.lazy(() => import('./views/Team'));
 function App() {
     return (
         <ChakraProvider>
-            <Navbar />
             <Router>
+                <Navbar />
                 <Suspense>
                     <Routes>
                         <Route exact path="/" element={<Home />} />

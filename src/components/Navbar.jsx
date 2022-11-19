@@ -2,7 +2,7 @@ import {
   Box,
   Flex,
   HStack,
-  Link,
+  Link as ChakraLink,
   IconButton,
   useDisclosure,
   Stack,
@@ -10,6 +10,7 @@ import {
   Text,
   Collapse,
 } from '@chakra-ui/react';
+import { Link } from "react-router-dom";
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 import logo from '../assets/org-logo.png';
@@ -31,7 +32,7 @@ export default function Navbar() {
           <HStack spacing={8} alignItems={'center'}>
             <HStack>
               <Image src={logo} h={'45'} w={'45'}></Image>
-              <Link fontSize={'28px'} fontWeight={'700'} color='white' style={{ textDecoration: 'none' }} href='/'>Winter of Code</Link>
+              <ChakraLink fontSize={'28px'} fontWeight={'700'} color='white' style={{ textDecoration: 'none' }} href='/'>Winter of Code</ChakraLink>
             </HStack>
           </HStack>
           <Flex alignItems={'center'}>
@@ -39,7 +40,7 @@ export default function Navbar() {
               as={'nav'}
               spacing={7}
               display={{ base: 'none', lg: 'flex' }}>
-                <Link
+                <ChakraLink
                   px={2}
                   py={1}
                   href='https://dscnsec.com/'
@@ -51,11 +52,10 @@ export default function Navbar() {
                     bg: '#4285F4',
                   }}>
                   GDSC NSEC
-                </Link>
-                <Link
+                </ChakraLink>
+                <ChakraLink
                   px={2}
                   py={1}
-                  href='/organisers'
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'
@@ -63,9 +63,11 @@ export default function Navbar() {
                     textDecoration: 'none',
                     bg: '#4285F4',
                   }}>
-                  Team
-                </Link>
-                <Link
+                    <Link to="/organisers">
+                    Team
+                    </Link>
+                </ChakraLink>
+                <ChakraLink
                   px={2}
                   py={1}
                   href='#organizations'
@@ -77,8 +79,8 @@ export default function Navbar() {
                     bg: '#4285F4',
                   }}>
                   Organizations
-                </Link>
-                <Link
+                </ChakraLink>
+                <ChakraLink
                   px={2}
                   py={1}
                   href='#faq'
@@ -90,8 +92,8 @@ export default function Navbar() {
                     bg: '#4285F4',
                   }}>
                   FAQ
-                </Link>
-                <Link
+                </ChakraLink>
+                <ChakraLink
                   px={2}
                   py={1}
                   href='#contact'
@@ -103,7 +105,7 @@ export default function Navbar() {
                     bg: '#4285F4',
                   }}>
                   Contact Us
-                </Link>
+                </ChakraLink>
             </HStack>
           </Flex>
         </Flex>
@@ -111,7 +113,7 @@ export default function Navbar() {
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
-                <Link
+                <ChakraLink
                   px={2}
                   py={1}
                   href='https://dscnsec.com/'
@@ -123,8 +125,8 @@ export default function Navbar() {
                     color: '#4285F4',
                   }}>
                   GDSC NSEC
-                </Link>
-                <Link
+                </ChakraLink>
+                <ChakraLink
                   px={2}
                   py={1}
                   href='organisers'
@@ -136,8 +138,8 @@ export default function Navbar() {
                     color: '#4285F4',
                   }}>
                   Team
-                </Link>
-                <Link
+                </ChakraLink>
+                <ChakraLink
                   px={2}
                   py={1}
                   href='#organizations'
@@ -149,8 +151,8 @@ export default function Navbar() {
                     color: '#4285F4',
                   }}>
                   Organizations
-                </Link>
-                <Link
+                </ChakraLink>
+                <ChakraLink
                   px={2}
                   py={1}
                   href='#faq'
@@ -162,8 +164,8 @@ export default function Navbar() {
                     color: '#4285F4',
                   }}>
                   FAQ
-                </Link>
-                <Link
+                </ChakraLink>
+                <ChakraLink
                   px={2}
                   py={1}
                   href='#contact'
@@ -175,7 +177,7 @@ export default function Navbar() {
                     color: '#4285F4',
                   }}>
                   Contact Us
-                </Link>
+                </ChakraLink>
             </Stack>
           </Box>
         ) : null}
