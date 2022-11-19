@@ -13,7 +13,7 @@ import data from "./Faq Data/faqData";
 
 const faq = () => {
   return (
-    <div id="faqs">
+    <div id="faq">
       <Container        
         maxW="container.m"
         textAlign="center"

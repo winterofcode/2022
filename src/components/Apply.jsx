@@ -5,7 +5,7 @@ import { Box, Heading, Text, Button } from '@chakra-ui/react'
 function Apply() {
     return (
         <>
-            <Box className='apply-section'>
+            <Box className='apply-section' id="organizations">
                 <Box className="apply-content" m={10}>
                     <Heading color='white'>Apply</Heading>
                     <Text className='text' lineHeight={2} mt={2} color='white'>Start your journey with Winter Of Code & be a part of our Open Source community.</Text>

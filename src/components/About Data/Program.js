@@ -27,11 +27,11 @@ const Program = () => {
         borderRadius='25px'
         overflow='hidden'
       >        
-        <Text fontSize="5xl" as="b">
+        <Text fontSize={{base: "35px", md: "50px"}} as="b">
           About The Program
         </Text>
         <br />
-        <Text fontSize="2xl" as="b" color="gray.200">
+        <Text fontSize={{base: "18px", md: "20px"}} as="b" color="gray.200">
           Winter of Code is a program aimed to increase participation for the
           Google Summer of Code program among students in colleges and
           universities.
