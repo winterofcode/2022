@@ -1,39 +1,43 @@
-import { Box, Image, Text } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import React from "react";
-import programbg from "./programbg.webp";
+import programbg from "../../assets/programbg.webp";
 
 const Program = () => {
   return (
     <Box
       bgImage={`linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(${programbg})`}
-      display="flex"
-      flexDir={{base: 'column', md: 'row' , lg: 'row'}}
+      bgRepeat='no-repeat'
+      bgSize='cover'
       color="white"
-      bgPos={'center'}      
-      alignItems='center'
-      alignContent={'center'}
-    >    
+      display="flex"
+      flexDir={{base: 'column-reverse', md: 'row' , lg: 'row'}}
+      bgPos={'center'}     
+      alignContent='center'
+      alignItems={'center'} 
+      justifyContent='center'
+    >
+    
       <Box
-        m={7}
+        m={7}        
         p={5}
         px={8}        
         maxW={'1100px'}
         backdropFilter={"saturate(230%) blur(8px)"}
-        bg="rgba(255,255,255,0.1)"
+        bg="rgba(24, 9, 82, 0.164)"        
         borderRadius='25px'
-        overflow='hidden'        
+        overflow='hidden'
       >        
         <Text fontSize="5xl" as="b">
           About The Program
         </Text>
         <br />
-        <Text fontSize="2xl" as="b" color="gray.300">
+        <Text fontSize="2xl" as="b" color="gray.200">
           Winter of Code is a program aimed to increase participation for the
           Google Summer of Code program among students in colleges and
           universities.
         </Text>
         <br /> <br />
-        <Text as="b" color="gray.500">
+        <Text as="b" color="gray.300">
           Winter of Code is here to light up your winter spirits with the wide
           world of open source development. This initiative aims to prepare you
           for the grand Google Summer of Code. Join us for a month-long
@@ -48,7 +52,6 @@ const Program = () => {
           the world of open source and develop more code for the benefit of all.
         </Text>
       </Box>
-      
     </Box>
   );
 };

@@ -52,21 +52,19 @@ body {
 }
 
 #faqs {
-    background-image: linear-gradient(
-        rgba(255, 255, 255, 0.5),
-        rgba(255, 255, 255, 0.5)
-        ),
-        url("./components/Faq\ Data/faqbg.jpg");
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;
+  background-image: linear-gradient(to right, #030a4d , #02023b);
 }
 
 .parallax {
-    position: relative;
-    background: no-repeat center center scroll;
-    background-size: cover;
-    background-attachment: fixed;
-    display: block;
-    background-image: url('../public/statisticsbg.webp') !important;
+  position: relative;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  background-attachment: fixed;
+  display: block;
+  background-image: url('../src/assets/statisticsbg.webp')!important
+}
+
+:focus {
+  outline: none;
+  box-shadow: none;
 }
