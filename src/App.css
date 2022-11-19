@@ -6,11 +6,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
     /* background-color: black; */
-
     flex-wrap: wrap;
- 
     gap: 12px;
 
 }
@@ -52,22 +49,24 @@ body {
         width: 100%;
 
     }
+}
+
 #faqs {
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("./components/Faq\ Data/faqbg.jpg");
-  background-position: center;
-  background-size: 80%;
-  background-repeat: no-repeat;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+        ),
+        url("./components/Faq\ Data/faqbg.jpg");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
 }
 
 .parallax {
-  position: relative;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  background-attachment: fixed;
-  display: block;
-  background-image: url('../public/statisticsbg.webp')!important
+    position: relative;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    background-attachment: fixed;
+    display: block;
+    background-image: url('../public/statisticsbg.webp') !important;
 }
