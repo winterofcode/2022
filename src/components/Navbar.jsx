@@ -19,7 +19,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={'gray.900'} px={{base: '4', md: '20'}} pos='sticky' top={'0'} backdropFilter='auto'>
+      <Box bg={'gray.900'} px={{base: '4', md: '20'}} pos='sticky' top={'0'} backdropFilter='auto' zIndex={100}>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
