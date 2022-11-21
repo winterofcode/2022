@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Rubik+Bubbles');
 @import url('https://fonts.googleapis.com/css?family=Creepster');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
 
 * {
     box-sizing: border-box;
@@ -25,8 +26,8 @@ body {
     left: 50%;
     right: 0;
     bottom: 0;
-    margin-left: -50vw;
-    filter: hue-rotate(-150deg);
+    margin-left: -55vw;
+
 }
 
 .parallax__layer {
@@ -35,7 +36,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 100vw;
+    width: 118vw;
 }
 
 .parallax__layer img {
@@ -61,26 +62,31 @@ body {
 .parallax__layer__0 {
     -webkit-transform: translateZ(-300px) scale(4);
     transform: translateZ(-300px) scale(4);
+    filter: hue-rotate(-150deg);
 }
 
 .parallax__layer__1 {
     -webkit-transform: translateZ(-250px) scale(3.5);
     transform: translateZ(-250px) scale(3.5);
+    filter: hue-rotate(-150deg);
 }
 
 .parallax__layer__2 {
     -webkit-transform: translateZ(-200px) scale(3);
     transform: translateZ(-200px) scale(3);
+    filter: hue-rotate(-150deg);
 }
 
 .parallax__layer__3 {
     -webkit-transform: translateZ(-150px) scale(2.5);
     transform: translateZ(-150px) scale(2.5);
+    filter: hue-rotate(-150deg);
 }
 
 .parallax__layer__4 {
     -webkit-transform: translateZ(-100px) scale(2);
     transform: translateZ(-100px) scale(2);
+    filter: hue-rotate(-150deg);
 }
 
 .parallax__layer__5 {
@@ -88,104 +94,118 @@ body {
     transform: translateZ(-50px) scale(1.5);
 }
 
+.parallax__layer__5 img {
+    filter: hue-rotate(-150deg);
+}
+
 .parallax__layer__6 {
     -webkit-transform: translateZ(0px) scale(1);
     transform: translateZ(0px) scale(1);
+    filter: hue-rotate(-150deg);
 }
 
 .title {
     position: absolute;
-    width: 70vw;
+    width: 40vw;
     height: 219px;
 
-    font-family: 'Rubik Bubbles';
+    font-family: 'Playfair Display';
     font-style: normal;
     font-weight: 400;
     font-size: 6rem;
     line-height: 152px;
-    color: lightblue;
+    color: #D4F2D2;
 
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    top: 30vh;
-    left: 5vw;
+    top: 22vh;
+    left: 38vw;
     z-index: 5;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-color: #34113f;
+    text-align: center;
 }
 
 .registration-btn {
     box-sizing: border-box;
-    top: 52vh;
-    left: 6vw;
+    top: 48vh;
+    left: 47vw;
     position: absolute;
     width: 23vw;
     height: 70px;
 
-    /* background: lightslategra; */
+    background: #BEB7DF;
     border: 1px solid grey;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 50px;
-    color: lightblue;
-    font-size: 3rem;
-    font-weight: 500;
-    font-family: 'Creepster';
+    color: #34113F;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: sans-serif;
     z-index: 3;
     /* cursor: pointer; */
 }
 
-@media screen and (max-width: 1210px) {
-    .parallax__layer img {
-        height: 60%;
+@media screen and (max-width:1580px) {
+    .title {
+        width: 70vw;
+        left: 20vw;
     }
 
+    .registration-btn {
+        left: 44vw;
+    }
+
+}
+
+@media screen and (max-width:900px) {
     .title {
         width: 90vw;
-        font-size: 6rem;
-        text-align: center;
-        color: lightblue;
-        margin-bottom: 1em;
-        line-height: 120px;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: red;
+        left: 12vw;
+    }
+
+    .registration-btn {
+        width: 30vw;
+        left: 42vw;
+    }
+
+}
+
+@media screen and (max-width:700px) {
+    .title {
+        width: 95vw;
+        left: 7vw;
+        font-size: 5rem;
     }
 
     .registration-btn {
         width: 40vw;
-        left: 30vw;
+        left: 38vw;
     }
+
 }
 
-@media screen and (max-width: 809px) {
-    .registration-btn {
-        top: 60vh;
-        width: 60vw;
-        left: 20%;
-        border: 1px solid white;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .parallax__layer img {
-        height: 60%;
-    }
-
-    .parallax {
-        margin-left: -49vw;
-    }
-
-    .registration-btn {
-        width: 80vw;
-        left: 10vw;
-    }
-}
-
-@media screen and (max-width: 410px) {
+@media screen and (max-width:555px) {
     .title {
-        font-size: 3rem;
+        width: 98vw;
         line-height: 80px;
+        font-size: 3.5rem;
+        font-weight: 700;
+        -webkit-text-stroke-color: yellow;
+        top: 30vh
     }
 
     .registration-btn {
-        font-size: 2rem;
+        width: 60vw;
+        left: 26vw;
     }
+
+}
+
+@media screen and (max-width:380px) {
+    .title {
+        width: 98vw;
+        line-height: 80px;
+        font-size: 2.8rem
+    }
+
 }
