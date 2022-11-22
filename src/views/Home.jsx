@@ -28,26 +28,25 @@ const Home = () => {
     // }
     useEffect(() => {
         document.onmousemove = function (e) {
-            // console.log(e.clientX, window.innerWidth);
-            const centre=window.innerWidth/2;
-            console.log((centre-e.clientX)/10)
-            const move1=(centre-e.clientX)/14
-            const move2=(centre-e.clientX)/12
-            const move3=(centre-e.clientX)/10
-            const move4=(centre-e.clientX)/7
-            const move5=(centre-e.clientX)/5
-            const move6=(centre-e.clientX)/4
-            const tmove=-1 * move5
-            // const title=(centre-e.clientX)/6
-            layer1.current.style.left=move1+"px"
-            layer2.current.style.left=move2+"px"
-            layer3.current.style.left=move3+"px"
-            layer4.current.style.left=move4+"px"
-            layer5.current.style.left=move5+"px"
-            layer6.current.style.left=move6+"px"
-            title.current.style.right=tmove+"px"
-    
-
+            if (window.innerWidth > 700) {
+                // console.log(e.clientX, window.innerWidth);
+                const centre=window.innerWidth/2;
+                const move1=(centre-e.clientX)/25
+                const move2=(centre-e.clientX)/19
+                const move3=(centre-e.clientX)/18
+                const move4=(centre-e.clientX)/17
+                const move5=(centre-e.clientX)/14
+                const move6=(centre-e.clientX)/12
+                const tmove=-1 * move5
+                // const title=(centre-e.clientX)/6
+                layer1.current.style.left=move1+"px"
+                layer2.current.style.left=move2+"px"
+                layer3.current.style.left=move3+"px"
+                layer4.current.style.left=move4+30+"px"
+                layer5.current.style.left=move5+"px"
+                layer6.current.style.left=move6+"px"
+                title.current.style.right=tmove+"px"
+            }
         }
         // obj.addEventListener("scroll", sp)
     })
@@ -55,9 +54,10 @@ const Home = () => {
     return (
         <div className="home">
             <div className="parallax">
-            <h1 className="title" ref={title}>
-                        Winter of code</h1>
-                    <button className="registration-btn">Register Now</button>
+                <h1 className="title" ref={title}>
+                    Winter of code
+                </h1>
+                <button className="registration-btn">Register Now</button>
                 <div ref={layer1} className="parallax__layer parallax__layer__0">
                     <img src={layer_0} />
                 </div>
@@ -80,7 +80,9 @@ const Home = () => {
                 <div className="parallax__layer parallax__layer__6" ref={layer6}>
                     <img src={layer_6} />
                 </div>
-                <div className="parallax__cover"></div>
+                <div className="parallax__cover">
+                    ergerth
+                </div>
             </div>
         </div>
     )
