@@ -54,10 +54,12 @@ const Home = () => {
     return (
         <div className="home">
             <div className="parallax">
-                <h1 className="title" ref={title}>
+                <div className="parallax-title">
+                <div className="title" ref={title}>
                     Winter of code
-                </h1>
+                </div>
                 <button className="registration-btn">Register Now</button>
+                </div>
                 <div ref={layer1} className="parallax__layer parallax__layer__0">
                     <img src={layer_0} />
                 </div>
