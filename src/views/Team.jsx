@@ -4,8 +4,8 @@ import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { VscGithubAlt } from "react-icons/vsc";
 import { ScaleFade } from '@chakra-ui/react'
 import { Link } from '@chakra-ui/react';
-import { data } from './data/data'
-import "./data/teambg.css"
+import { data } from '../data/data'
+import "../styles/teambg.css"
 import ImageLoad from "../components/ImageLoad"
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
