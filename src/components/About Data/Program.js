@@ -8,10 +8,12 @@ const Program = () => {
       bgImage={`linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.4)), url(${programbg})`}
       bgRepeat='no-repeat'
       bgSize='cover'
+      bgPosition='center'
+      bgColor="rgba(22, 22, 22, 0.589)"
+      bgBlendMode={'overlay'}
       color="white"
       display="flex"
-      flexDir={{base: 'column-reverse', md: 'row' , lg: 'row'}}
-      bgPos={'center'}     
+      flexDir={{base: 'column-reverse', md: 'row' , lg: 'row'}}      
       alignContent='center'
       alignItems={'center'} 
       justifyContent='center'
@@ -23,7 +25,7 @@ const Program = () => {
         px={8}        
         maxW={'1100px'}
         backdropFilter={"saturate(230%) blur(8px)"}
-        bg="rgba(24, 9, 82, 0.164)"        
+        bg="rgba(22, 22, 22, 0.589)"
         borderRadius='25px'
         overflow='hidden'
       >        
