@@ -125,9 +125,9 @@ export default function Timeline() {
                 >
                     <h3 className="vertical-timeline-element-title" style={{fontSize : "1rem", fontWeight: "bold"}}>{cardItem.title}</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
-                    <p>
+                    <Text>
                     {cardItem.description}
-                    </p>
+                    </Text>
                 </VerticalTimelineElement>
                 )
             })}
