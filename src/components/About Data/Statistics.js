@@ -7,7 +7,7 @@ import {VscOrganization} from 'react-icons/vsc'
 const Statistics = () => {
   return (
     <Box      
-      className='parallax'
+      className='parallax_stats'
       bgColor='rgba(0,0,0,0.4)'
       bgBlendMode={"overlay"}      
       display="flex"

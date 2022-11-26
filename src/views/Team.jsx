@@ -1,5 +1,5 @@
 import React from 'react'
-import { Flex, Text, Stack, Heading, IconButton } from "@chakra-ui/react";
+import { Flex, Text, Stack, Heading, IconButton, Box } from "@chakra-ui/react";
 import { FaLinkedin, FaGithub, FaTwitter } from "react-icons/fa";
 import { VscGithubAlt } from "react-icons/vsc";
 import { ScaleFade } from '@chakra-ui/react'
@@ -7,15 +7,21 @@ import { Link } from '@chakra-ui/react';
 import { data } from './data/data'
 import "./data/teambg.css"
 import ImageLoad from "../components/ImageLoad"
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const Team = () => {
     return (
         <>
-            <Bg />
-            <Heading p='50px' fontSize='5xl' color='white' textAlign='center'>Our Team</Heading>
-            <Flex width='95%' maxWidth='1100px' wrap='wrap' margin='auto' justifyContent='center' gap='30px'>
-                <Cards />
-            </Flex>
+            <Navbar />
+            <Box className='teams-container'>
+                <Bg />
+                <Heading p='50px' fontSize='5xl' color='white' textAlign='center'>Our Team</Heading>
+                <Flex width='95%' maxWidth='1100px' wrap='wrap' margin='auto' justifyContent='center' gap='30px'>
+                    <Cards />
+                </Flex>
+            </Box>
+            <Footer />
         </>
     )
 }

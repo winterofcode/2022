@@ -55,7 +55,7 @@ body {
   background-image: linear-gradient(to right, #030a4d , #02023b);
 }
 
-.parallax {
+.parallax_stats {
   position: relative;
   background: no-repeat center center scroll;
   background-size: cover;
