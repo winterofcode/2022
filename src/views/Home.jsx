@@ -15,6 +15,7 @@ import layer_6 from "../assets/layer_6.webp"
 import { FaOtter } from 'react-icons/fa';
 import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
+import Timeline from '../components/Timeline';
 
 const Home = () => {
 
@@ -86,14 +87,11 @@ const Home = () => {
                 </div>
                 <div className="parallax__cover">
                     <div className='parallax_mix'>
-                        hey ther
-                        <br />
-                        <br />
-                        <br />
                     </div>
                     <About />
                     <Apply />
                     <Card />
+                    <Timeline />
                     <Faq />
                     <Footer />
                 </div>
