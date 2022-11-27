@@ -8,7 +8,7 @@ const Statistics = () => {
   return (
     <Box      
       className='parallax_stats'
-      bgColor='rgba(0,0,0,0.4)'
+      bgColor='rgba(0,0,0,0.6)'
       bgBlendMode={"overlay"}      
       display="flex"
       flexDir={{base: 'column', md: 'row' , lg: 'row'}}
