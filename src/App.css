@@ -63,7 +63,7 @@ body {
   display: block;
   /* background-image: url('../src/assets/statisticsbg.webp')!important */
   /* background-image: url('https://media.istockphoto.com/id/1312755396/photo/reflection-of-light-in-small-waves-ripples-on-the-surface-of-the-water-wet-fluid-marble.jpg?b=1&s=170667a&w=0&k=20&c=NQT_CteTYFsZq8x6qP3SLh1ZUjIi9AV5zrGfUdJgurY=')!important */
-  background-image: url('https://media.istockphoto.com/id/1196030363/photo/abstract-underwater-background-with-sunbeams.jpg?s=612x612&w=0&k=20&c=kcRKyAlotI9o8KRXgve2TNbWCcfEQhJpyMJNmWZGeQA=')!important
+  background-image: url('../src/assets/statisticsbg.webp')!important
 }
 
 :focus {
