@@ -111,7 +111,7 @@ export default function Timeline() {
                 <Text color="white" textAlign="center" fontSize={40}>Timeline</Text>
             </Heading>
             
-        <VerticalTimeline lineColor='black' layout='2-columns' >
+        <VerticalTimeline lineColor='white' layout='2-columns' >
             {timelineCardData.map(cardItem =>{
                 return (
                     <VerticalTimelineElement 
@@ -149,7 +149,7 @@ export default function Timeline() {
                 <h1 align="center" color='black'>Timeline</h1>
            
             </Heading>
-            <VerticalTimeline lineColor='black'>
+            <VerticalTimeline lineColor='white'>
             {timelineCardData.map(cardItem =>{
                 return (
                     <VerticalTimelineElement
