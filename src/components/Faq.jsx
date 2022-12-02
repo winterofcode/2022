@@ -13,7 +13,7 @@ import data from "./Faq Data/faqData";
 
 const faq = () => {
   return (
-    <div id="faq">
+    <div style={{backgroundImage: 'linear-gradient(to right, #030a4d , #02023b)'}}>
       <Container        
         maxW="container.sm"
         textAlign="center"

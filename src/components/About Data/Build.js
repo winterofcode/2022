@@ -4,8 +4,7 @@ import { Box, Text } from "@chakra-ui/react";
 const Build = () => {
   return (
     <Box
-      // bg='linear-gradient(to right, #0f1a80 , #02023b)'
-      bg="#000d30"
+      bg='linear-gradient(to right, #070c3f , #01012c)'      
       color="white"
       
     >
