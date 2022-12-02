@@ -21,7 +21,7 @@ function Card() {
                                     {x.no_of_projects}
                                 </Box>
 
-                                <Button colorScheme='blue' className='view-project'>View projects</Button>
+                                <Button colorScheme='blue' color="white" className='view-project'>View projects</Button>
                             </Box>
                         )
                     })

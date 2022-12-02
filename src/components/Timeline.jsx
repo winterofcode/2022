@@ -117,22 +117,23 @@ export default function Timeline() {
                     <VerticalTimelineElement 
                     key={cardItem.id}
                     className="vertical-timeline-element--education"
-                    contentStyle={{ borderTop: `5px solid ${cardItem.bgIconColor}`, color: 'black' }}    // dont delete this, will be needed to update.
+                    contentStyle={{ borderTop: `5px solid ${cardItem.bgIconColor}`, color: 'white' }}    // dont delete this, will be needed to update.
                     contentArrowStyle={{ borderRight: `7px solid  ${cardItem.bgIconColor}` }}  // dont delete this, will be needed to update.
                     date={cardItem.dateVal}
                     iconStyle={{ background: `${cardItem.bgIconColor}`, color: '#fff' }}
                     icon={<StarFull/>}
                 >
-                    <h3 className="vertical-timeline-element-title" style={{fontSize : "1rem", fontWeight: "bold"}}>{cardItem.title}</h3>
+                    <h3 className="vertical-timeline-element-title" style={{fontSize : "1rem", fontWeight: "bold", color : "black"}}>{cardItem.title}</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                     <Text>
-                    {cardItem.description}
+                    <h3 className="vertical-timeline-element-subtitle" style={{fontSize : "1rem", color : "black"}}>{cardItem.description}</h3>
                     </Text>
                 </VerticalTimelineElement>
                 )
             })}
              <VerticalTimelineElement
                 iconStyle={{ background: '#4285F4', color: '#fff' }}
+                contentStyle={{color : "white"}}
                 date="Completion of WOC'22"
                 icon={<CircleStarFull/>}
             />
@@ -170,6 +171,7 @@ export default function Timeline() {
             })}
              <VerticalTimelineElement
                 iconStyle={{ background: '#4285F4', color: '#fff' }}
+                contentStyle={{color : "white"}}
                 date="Completion of WOC'22"
                 icon={<CircleStarFull/>}
             />

@@ -51,7 +51,7 @@ body {
 }
 
 .parallax__cover {
-    background: #111520;
+    background: #12172e;
     display: block;
     position: absolute;
     top: calc(100%);
@@ -188,45 +188,6 @@ body {
 @media screen and (max-width: 700px) {
     .parallax__layer {
         left: 0px !important;
-    }
-    .parallax__layer__0 {
-        -webkit-transform: translateZ(0px) scale(1);
-        transform: translateZ(0px) scale(1);
-    }
-    
-    .parallax__layer__1 {
-        -webkit-transform: translateZ(0px) scale(1);
-        transform: translateZ(0px) scale(1);
-    }
-    
-    .parallax__layer__2 {
-        -webkit-transform: translateZ(0px) scale(1);
-        transform: translateZ(0px) scale(1);
-    }
-    
-    .parallax__layer__3 {
-        -webkit-transform: translateZ(0px) scale(1);
-        transform: translateZ(0px) scale(1);
-    }
-    
-    .parallax__layer__4 {
-        -webkit-transform: translateZ(0px) scale(1);
-        transform: translateZ(0px) scale(1);
-    }
-    
-    .parallax__layer__5 {
-        -webkit-transform: translateZ(0px) scale(1);
-        transform: translateZ(0px) scale(1);
-    }
-    
-    .parallax__layer__5 img {
-        filter: hue-rotate(-150deg);
-    }
-    
-    .parallax__layer__6 {
-        -webkit-transform: translateZ(0px) scale(1);
-        transform: translateZ(0px) scale(1);
-        filter: hue-rotate(-150deg);
     }
 }
 @media screen and (max-width: 600px) {
