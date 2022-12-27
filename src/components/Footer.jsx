@@ -56,7 +56,9 @@ export default function Footer() {
   return (
     <Box
       bg={'#171923'}
-      color={'#E2E8F0'}>
+      color={'#E2E8F0'} 
+      pos="relative"
+      zIndex={300}>
       <Container as={Stack} maxW={'6xl'} py={10}>
         <SimpleGrid
           templateColumns={{ sm: '2fr', md: '2fr 1fr 1fr' }}

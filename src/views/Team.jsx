@@ -16,7 +16,7 @@ const Team = () => {
             <Navbar />
             <Box className='teams-container'>
                 <Bg />
-                <Heading p='50px' fontSize='5xl' color='white' textAlign='center'>Our Team</Heading>
+                <Heading p='50px' fontSize='5xl' color='white' zIndex={1} pos="relative" textAlign='center'>Our Team</Heading>
                 <Flex width='95%' maxWidth='1100px' wrap='wrap' margin='auto' justifyContent='center' gap='30px'>
                     <Cards />
                 </Flex>
