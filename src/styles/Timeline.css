@@ -9,11 +9,13 @@
     font-style: normal;
 }
 
-.date-font{
+.timeline-date-font{
+    padding: 0 2rem 0 2rem !important;
     font-size: 20px !important;
     font-weight: 600 !important;
+    color: white !important;
 }
 .vertical-timeline-element-content bounce-in{
-    width: 462px;
-    height: 184px;
+    width: 462px !important;
+    height: 184px !important;
 }

@@ -2,7 +2,8 @@ import React, {useState, useEffect} from 'react';
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import {CircleStarFull, StarFull, StarEmpty, CircleStarEmpty } from "../icon/icon";
-import { Heading, Box, Flex, Text } from '@chakra-ui/react';
+import { Heading, Box, Flex, Text, VStack } from '@chakra-ui/react';
+import { ArrowDownIcon, ChevronDownIcon, TriangleDownIcon } from '@chakra-ui/icons'
 import "../styles/Timeline.css"
 
 export default function Timeline() {
@@ -116,12 +117,13 @@ export default function Timeline() {
             {timelineCardData.map(cardItem =>{
                 return (
                     <VerticalTimelineElement 
+                    style={{width:"1064px", height:"184px" , position : "relative", left: "53px"}}
                     key={cardItem.id}
                     className="vertical-timeline-element--education"
                     contentStyle={{ borderTop: `5px solid ${cardItem.bgIconColor}`, color: 'white' }}    // dont delete this, will be needed to update.
                     contentArrowStyle={{ borderRight: `7px solid  ${cardItem.bgIconColor}` }}  // dont delete this, will be needed to update.
                     date={cardItem.dateVal}
-                    dateClassName="date-font"
+                    dateClassName="timeline-date-font"
                     iconStyle={{ background: `${cardItem.bgIconColor}`, color: '#fff' }}
                     icon={<StarFull/>}
                 >
@@ -133,14 +135,13 @@ export default function Timeline() {
                 </VerticalTimelineElement>
                 )
             })}
-             <VerticalTimelineElement
-                iconStyle={{ background: '#4285F4', color: '#fff' }}
-                contentStyle={{color : "white"}}
-                date="Completion of WOC'22"
-                dateClassName="date-font"
-                icon={<CircleStarFull/>}
-            />
         </VerticalTimeline>
+        <Box display="flex" justifyContent="center">
+            <VStack>
+            <TriangleDownIcon boxSize={7} color="white" padding={0} margin={0}/>
+            <Text fontWeight="semibold" fontSize="20px" color="rgba(255, 255, 255, 0.7)">Completion of WOC 2022</Text>
+            </VStack>
+        </Box>
     </Box>
    
     );
