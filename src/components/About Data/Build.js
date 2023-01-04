@@ -7,13 +7,7 @@ import mentors from "../../assets/motive_mentor.png";
 const Build = () => {
   return (
     <Box bg="#012325" color="white">
-      <Box
-        p={10}
-        m={10}
-        mt={0}
-        textAlign={"center"}
-        color="white"        
-      >
+      <Box p={10} m={10} mt={0} textAlign={"center"} color="white">
         <Box>
           <Text fontSize="3xl" fontWeight={600}>
             Let's Build Something Awesome Together
@@ -38,12 +32,14 @@ const Build = () => {
         textAlign="justify"
       >
         <Box p={5} m={7} mt={0}>
-          <Text fontSize="3xl" as="b" color='#012325'>
-            Students
-          </Text>
-          <br />
-          <Image src={students} />
-          <Text fontSize={'16px'}>
+          <Box textAlign={"center"}>
+            <Text fontSize="3xl" as="b">
+              Students
+            </Text>
+            <br />
+            <Image src={students} marg margin="auto" in="auto" />
+          </Box>
+          <Text fontSize={"16px"}>
             Students who are interested can register for the Winter of Code by
             filling a form. Students who are selected will work with mentors of
             the organisation that they are accepted for. If accepted, students
@@ -57,12 +53,14 @@ const Build = () => {
         </Box>
 
         <Box p={5} m={7} mt={0}>
-          <Text fontSize="3xl" as="b" color='#012325'>
-            Organisations
-          </Text>
-          <br />
-          <Image src={organisations} />
-          <Text fontSize={'16px'}>
+          <Box textAlign={"center"}>
+            <Text fontSize="3xl" as="b">
+              Organisations
+            </Text>
+            <br />
+            <Image src={organisations} margin="auto" />
+          </Box>
+          <Text fontSize={"16px"}>
             Open source organisations can apply to be mentor organisations. Once
             accepted, organisations discuss possible ideas with students and
             then decide on the proposals they wish to mentor for the winter.
@@ -75,12 +73,14 @@ const Build = () => {
         </Box>
 
         <Box p={5} m={7} mt={0}>
-          <Text fontSize="3xl" as="b" color='#012325'>
-            Mentors
-          </Text>
-          <br />
-          <Image src={mentors} />
-          <Text fontSize={'16px'}>
+          <Box textAlign={"center"}>
+            <Text fontSize="3xl" as="b">
+              Mentors
+            </Text>
+            <br />
+            <Image src={mentors} margin="auto" />
+          </Box>
+          <Text fontSize={"16px"}>
             Mentors guide the students throughout their projects and review
             their code samples multiple times. They provide valuable feedback
             and suggest possible improvements to the code. They also determine
