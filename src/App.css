@@ -51,21 +51,6 @@ body {
     }
 }
 
-.parallax_stats {
-  position: relative;
-  background: no-repeat center center scroll;
-  background-size: cover;
-  background-attachment: fixed;
-  display: block;
-  /* background-image: url('../src/assets/statisticsbg.webp')!important */
-  /* background-image: url('https://media.istockphoto.com/id/1312755396/photo/reflection-of-light-in-small-waves-ripples-on-the-surface-of-the-water-wet-fluid-marble.jpg?b=1&s=170667a&w=0&k=20&c=NQT_CteTYFsZq8x6qP3SLh1ZUjIi9AV5zrGfUdJgurY=')!important */
-  background-image: url('../src/assets/statisticsbg.webp')!important
-}
-
-.func{
-  background-color: rgba(8, 140, 127, 0.5)
-}
-
 :focus {
   outline: none;
   box-shadow: none;
