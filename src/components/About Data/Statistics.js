@@ -6,10 +6,9 @@ import {VscOrganization} from 'react-icons/vsc'
 
 const Statistics = () => {
   return (
-    <Box      
-      className='parallax_stats'
-      bgColor='rgba(0,0,0,0.6)'
-      bgBlendMode={"overlay"}      
+    <Box            
+      bgColor='#088C7F'      
+      mixBlendMode='lighten'     
       display="flex"
       flexDir={{base: 'column', md: 'row' , lg: 'row'}}
       alignItems="center"

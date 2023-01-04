@@ -13,14 +13,14 @@ import data from "./Faq Data/faqData";
 
 const faq = () => {
   return (
-    <div style={{backgroundImage: 'linear-gradient(to right, #030a4d , #02023b)'}}>
+    <div style={{backgroundColor: '#012325'}}>
       <Container        
         maxW="container.sm"
         textAlign="center"
         display="flex"
         alignItems="center"
         flexDir="column"
-        justifyContent="center"
+        justifyContent="center"        
       >
         <Box >
           <Text
@@ -38,10 +38,12 @@ const faq = () => {
               allowMultiple
               key={faqs.slno}
               textAlign="left"
-              bg="#4444af"
-              _hover={{ bg: "#3c3cfa" }}
+              bg='#057368'
+              _hover={{ bg: "#058578" }}
               color="white"
-              my={2}
+              my={4}
+              borderTop= '3px solid #4285F4'
+              boxShadow= '0px 4px 6px rgba(0, 0, 0, 0.37)'
               
             >
               <AccordionItem>
@@ -55,7 +57,7 @@ const faq = () => {
                 </h2>
                 <AccordionPanel
                   pb={4}
-                  bg="#6262f0"
+                  bg="#06a090"
                   color="white"
                 >
                   {faqs.ans}
