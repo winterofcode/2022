@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.timeline-font{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+.date-font{
+    font-size: 20px !important;
+    font-weight: 600 !important;
+}
+.vertical-timeline-element-content bounce-in{
+    width: 462px;
+    height: 184px;
+}

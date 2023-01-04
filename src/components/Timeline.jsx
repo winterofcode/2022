@@ -3,6 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import {CircleStarFull, StarFull, StarEmpty, CircleStarEmpty } from "../icon/icon";
 import { Heading, Box, Flex, Text } from '@chakra-ui/react';
+import "../styles/Timeline.css"
 
 export default function Timeline() {
 
@@ -107,11 +108,11 @@ export default function Timeline() {
     const displayDesktop = () => {
     return (
         <Box my="70px" width="100%" height="100%">
-            <Heading fontSize="3xl" justify="center" align="center" fontFamily="sans-serif" mb="2rem">
-                <Text color="white" textAlign="center" fontSize={40}>Timeline</Text>
+            <Heading justify="center" align="center" fontFamily="sans-serif" mb="2rem">
+                <Text color="white" textAlign="center" fontSize="45px">Timeline</Text>
             </Heading>
             
-        <VerticalTimeline lineColor='white' layout='2-columns' >
+        <VerticalTimeline lineColor='white' layout='2-columns'>
             {timelineCardData.map(cardItem =>{
                 return (
                     <VerticalTimelineElement 
@@ -120,13 +121,14 @@ export default function Timeline() {
                     contentStyle={{ borderTop: `5px solid ${cardItem.bgIconColor}`, color: 'white' }}    // dont delete this, will be needed to update.
                     contentArrowStyle={{ borderRight: `7px solid  ${cardItem.bgIconColor}` }}  // dont delete this, will be needed to update.
                     date={cardItem.dateVal}
+                    dateClassName="date-font"
                     iconStyle={{ background: `${cardItem.bgIconColor}`, color: '#fff' }}
                     icon={<StarFull/>}
                 >
-                    <h3 className="vertical-timeline-element-title" style={{fontSize : "1rem", fontWeight: "bold", color : "black"}}>{cardItem.title}</h3>
+                    <h3 className="vertical-timeline-element-title" style={{fontSize : "24px", fontWeight:"semibold" , color : "black"}}>{cardItem.title}</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
                     <Text>
-                    <h3 className="vertical-timeline-element-subtitle" style={{fontSize : "1rem", color : "black"}}>{cardItem.description}</h3>
+                    <h3 className="vertical-timeline-element-subtitle" style={{fontSize : "16px", fontWeight:"medium", color : "black"}}>{cardItem.description}</h3>
                     </Text>
                 </VerticalTimelineElement>
                 )
@@ -135,6 +137,7 @@ export default function Timeline() {
                 iconStyle={{ background: '#4285F4', color: '#fff' }}
                 contentStyle={{color : "white"}}
                 date="Completion of WOC'22"
+                dateClassName="date-font"
                 icon={<CircleStarFull/>}
             />
         </VerticalTimeline>
@@ -182,7 +185,7 @@ export default function Timeline() {
     };
 
     return (
-        <Flex id="timeline" justify="center" align="center" backgroundColor="#012325">
+        <Flex className="timeline-font" id="timeline" justify="center" align="center" backgroundColor="#012325">
             {mobileView ? displayMobile() : displayDesktop()}  
         </Flex>
     )
