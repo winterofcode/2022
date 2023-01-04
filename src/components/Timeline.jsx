@@ -39,48 +39,48 @@ export default function Timeline() {
             title : "Students announced, projects matched by organisations",
             description : "Students receive an email regarding their selection and are assigned projects by their respective organisation."
         },
-        {
-            id : 5,
-            bgIconColor : "#EA4335",
-            dateVal : "14th December - 16th December, 2022",
-            title : "Community Bonding period",
-            description : "Students come to know of their respective Organisations. Mentors are assigned. Strategies and approaches towards their project are discussed over platforms like slack."
-        },
-        {
-            id : 6,
-            bgIconColor : "#FBBC05",
-            dateVal : "16th December - 29th December, 2022",
-            title : "Phase 1",
-            description : "The First round of tasks are handed out regarding the projects."
-        },
-        {
-            id : 7,
-            bgIconColor : "#4285F4",
-            dateVal : "30th December - 31st December, 2022",
-            title : "First Evaluation",
-            description : "The process of students is assessed."
-        },
-        {
-            id : 8,
-            bgIconColor : "#34A853",
-            dateVal : "1st January - 11th January, 2022",
-            title : "Phase 2",
-            description : "Second round of tasks is assigned."
-        },
-        {
-            id : 9,
-            bgIconColor : "#EA4335",
-            dateVal : "12th January - 13th January, 2022",
-            title : "Second Evaluation",
-            description : "Final evaluation is done based on the outcome of the assigned tasks."
-        },
-        {
-            id : 10,
-            bgIconColor : "#FBBC05",
-            dateVal : "20th January, 2022",
-            title : "Successful Students Announced",
-            description : "Name of students who have successfully completed the event will be announced."
-        }
+        // {
+        //     id : 5,
+        //     bgIconColor : "#EA4335",
+        //     dateVal : "14th December - 16th December, 2022",
+        //     title : "Community Bonding period",
+        //     description : "Students come to know of their respective Organisations. Mentors are assigned. Strategies and approaches towards their project are discussed over platforms like slack."
+        // },
+        // {
+        //     id : 6,
+        //     bgIconColor : "#FBBC05",
+        //     dateVal : "16th December - 29th December, 2022",
+        //     title : "Phase 1",
+        //     description : "The First round of tasks are handed out regarding the projects."
+        // },
+        // {
+        //     id : 7,
+        //     bgIconColor : "#4285F4",
+        //     dateVal : "30th December - 31st December, 2022",
+        //     title : "First Evaluation",
+        //     description : "The process of students is assessed."
+        // },
+        // {
+        //     id : 8,
+        //     bgIconColor : "#34A853",
+        //     dateVal : "1st January - 11th January, 2022",
+        //     title : "Phase 2",
+        //     description : "Second round of tasks is assigned."
+        // },
+        // {
+        //     id : 9,
+        //     bgIconColor : "#EA4335",
+        //     dateVal : "12th January - 13th January, 2022",
+        //     title : "Second Evaluation",
+        //     description : "Final evaluation is done based on the outcome of the assigned tasks."
+        // },
+        // {
+        //     id : 10,
+        //     bgIconColor : "#FBBC05",
+        //     dateVal : "20th January, 2022",
+        //     title : "Successful Students Announced",
+        //     description : "Name of students who have successfully completed the event will be announced."
+        // }
 
     ]
     
@@ -106,7 +106,7 @@ export default function Timeline() {
     
     const displayDesktop = () => {
     return (
-        <Box my="70px">
+        <Box my="70px" width="100%" height="100%">
             <Heading fontSize="3xl" justify="center" align="center" fontFamily="sans-serif" mb="2rem">
                 <Text color="white" textAlign="center" fontSize={40}>Timeline</Text>
             </Heading>
@@ -147,8 +147,9 @@ export default function Timeline() {
     return (
         <Box>
              <Heading fontSize="3xl" justify="center" align="center" fontFamily="sans-serif" mb="2rem">
-                <h1 align="center" color='black'>Timeline</h1>
-           
+                <Text color="white" align="center">
+                <h1>Timeline</h1>
+                </Text>
             </Heading>
             <VerticalTimeline lineColor='white'>
             {timelineCardData.map(cardItem =>{
@@ -181,7 +182,7 @@ export default function Timeline() {
     };
 
     return (
-        <Flex id="timeline" justify="center" align="center">
+        <Flex id="timeline" justify="center" align="center" backgroundColor="#012325">
             {mobileView ? displayMobile() : displayDesktop()}  
         </Flex>
     )
