@@ -9,11 +9,13 @@ import {
 } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import NewHome from "./views/Newhome";
 // import Rewards from './components/rewards/Rewards';
 // import Timeline from './components/Timeline';
 
-const Home = React.lazy(() => import("./views/Home"));
+// const Home = React.lazy(() => import("./views/Home"));
 const Team = React.lazy(() => import("./views/Team"));
+const Home = React.lazy(() => import("./views/Newhome"));
 
 function App() {
 
