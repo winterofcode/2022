@@ -6,7 +6,8 @@ import ltree_2 from "../assets/ltree-2.webp"
 import rtree_2 from "../assets/rtree-2.webp"
 import About from "../components/About";
 import Apply from "../components/Apply";
-import { Card } from "@chakra-ui/react";
+import Faq from "../components/Faq";
+import Card from "../components/Card";
 import Timeline from "../components/Timeline";
 import Footer from "../components/Footer";
 const NewHome=()=>{
@@ -39,7 +40,7 @@ const NewHome=()=>{
             <Apply />
             <Card />
             <Timeline />
-            {/* <Faq /> */}
+            <Faq />
             <Footer />
         </>
     )
