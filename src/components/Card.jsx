@@ -7,25 +7,29 @@ function Card() {
     return (
         <>
             <Box className='App' m={10}>
-                {
-                    cards.map((x) => {
-                        return (
-                            <Box className='card-body'>
-                                <Box className="card-logo">
-                                    <img src={x.src} alt="" />
-                                </Box>
-                                <Box className="card-title">
-                                    {x.title}
-                                </Box>
-                                <Box className="number_of_projects">
-                                    {x.no_of_projects}
-                                </Box>
+                <Box className='card-wrapper'>
+                    {
+                        cards.map((x) => {
+                            return (
+                                <Box className='card-body'>
+                                    <Box className="card-logo">
+                                        <img src={x.src} alt="" />
+                                    </Box>
+                                    <Box __css={{
+                                        color: 'black',
+                                    }} className="card-title">
+                                        {x.title}
+                                    </Box>
+                                    <Box className="number_of_projects">
+                                        {x.no_of_projects}
+                                    </Box>
 
-                                <Button colorScheme='blue' className='view-project'>View projects</Button>
-                            </Box>
-                        )
-                    })
-                }
+                                    <Button colorScheme='blue' className='view-project'>View projects</Button>
+                                </Box>
+                            )
+                        })
+                    }
+                </Box>
             </Box>
 
 
