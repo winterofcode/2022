@@ -1,6 +1,6 @@
 body {
     min-height: 100vh;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 .App {
     display: flex;
@@ -120,3 +120,7 @@ body {
 .t_over:nth-child(7):hover ~ .tilt-box{transform:rotateX(10deg) rotateY(10deg);}
 .t_over:nth-child(8):hover ~ .tilt-box{transform: rotateX(10deg) rotateY(0deg)}
 .t_over:nth-child(9):hover ~ .tilt-box{transform: rotateX(10deg) rotateY(-10deg)}
+
+.nhome {
+    overflow: hidden;
+}
