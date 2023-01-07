@@ -15,7 +15,6 @@
     font-weight: 600 !important;
     color: white !important;
 }
-.vertical-timeline-element-content bounce-in{
-    width: 462px !important;
-    height: 184px !important;
+.timeline-date-mobile-font{
+    font-size: 16px !important;
 }

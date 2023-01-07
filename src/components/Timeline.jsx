@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import 'react-vertical-timeline-component/style.min.css';
 import {CircleStarFull, StarFull, StarEmpty, CircleStarEmpty } from "../icon/icon";
 import { Heading, Box, Flex, Text, VStack } from '@chakra-ui/react';
-import { ArrowDownIcon, ChevronDownIcon, TriangleDownIcon } from '@chakra-ui/icons'
+import { TriangleDownIcon } from '@chakra-ui/icons'
 import "../styles/Timeline.css"
 
 export default function Timeline() {
@@ -109,7 +109,7 @@ export default function Timeline() {
     const displayDesktop = () => {
     return (
         <Box my="70px" width="100%" height="100%">
-            <Heading justify="center" align="center" fontFamily="sans-serif" mb="2rem">
+            <Heading justify="center" align="center" mb="2rem">
                 <Text color="white" textAlign="center" fontSize="45px">Timeline</Text>
             </Heading>
             
@@ -150,7 +150,7 @@ export default function Timeline() {
     const displayMobile = () => {
     return (
         <Box>
-             <Heading fontSize="3xl" justify="center" align="center" fontFamily="sans-serif" mb="2rem">
+             <Heading fontSize="35px" justify="center" align="center" mb="2rem">
                 <Text color="white" align="center">
                 <h1>Timeline</h1>
                 </Text>
@@ -163,20 +163,22 @@ export default function Timeline() {
                     contentStyle={{ borderTop: `5px solid ${cardItem.bgIconColor}`, color: 'black' }}    // dont delete this, will be needed to update.
                     contentArrowStyle={{ borderRight: `7px solid  ${cardItem.bgIconColor}` }}  // dont delete this, will be needed to update.
                     date={cardItem.dateVal}
+                    dateClassName="timeline-date-mobile-font"
                     iconStyle={{ background: `${cardItem.bgIconColor}`, color: '#fff' }}
                     icon={<StarFull/>}
                 >
-                    <h3 className="vertical-timeline-element-title" style={{fontSize : "1rem", fontWeight: "bold"}}>{cardItem.title}</h3>
+                    <h3 className="vertical-timeline-element-title" style={{fontSize : "16px", fontWeight: "600"}}>{cardItem.title}</h3>
                     {/* <h4 className="vertical-timeline-element-subtitle">Kolkata, India</h4> */}
-                    <p>
+                    <p style={{fontSize:"14px", fontWeight:"500"}}>
                     {cardItem.description}
                     </p>
                 </VerticalTimelineElement>
                 )
             })}
              <VerticalTimelineElement
-                iconStyle={{ background: '#4285F4', color: '#fff' }}
+                iconStyle={{ background: '#FBBC05', color: '#fff' }}
                 contentStyle={{color : "white"}}
+                dateClassName="timeline-date-mobile-font"
                 date="Completion of WOC'22"
                 icon={<CircleStarFull/>}
             />
