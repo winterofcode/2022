@@ -4,68 +4,49 @@
     box-sizing: border-box;
 }
 
-.card-body {
-    width: 300px;
-    height: 300px;
-    background-image: url("../assets/org-logo 2.png");
-    background-size: 75% 75%;
-    background-repeat: no-repeat;
-    background-position: fixed;
-    background-position: center;
-    border-radius: 20px;
-    overflow: hidden;
-    background-color: white;
-
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    transition: 0.25s;
-    flex-shrink: 0;
-    border: 1px solid black;
-}
+/* .card-body {
+    background-image: url("../assets/orgLogo2.png");   
+} */
 
 
 
-.card-logo img {
-    position: relative;
-    z-index: 100;
+/* .card-logo img {
+    position: 'relative';
+    z-index: '100';
     width: 100px;
     height: 100px;
-    border-radius: 20px !important;
-}
+    borderRadius: 20px !important;
+} */
 
 
-.card-title {
-    position: relative;
-    font-size: 1.1em;
-    font-weight: 500;
-    color: rgb(3, 3, 3);
-    margin: 7.5px;
-}
+/* .card-title {
+    position: 'relative',
+    fontSize: '1.1em',
+    fontWeight: '500',
+    color: 'rgb(3, 3, 3)',
+    margin: '7.5px',
+} */
 
-.number_of_projects {
-    position: relative;
-    font-size: 0.9em;
-    font-weight: 400;
-    color: rgb(0, 0, 0);
-}
+/* .number_of_projects {
+    position: 'relative',
+    fontSize: '0.9em',
+    fontWeight: '400',
+    color: 'rgb(0, 0, 0)',
+} */
 
-.view-project {
-    width: 180px;
-    height: 44px;
-    font-weight: 500;
-    font-size: 20px;
-    margin-top: 2.5%;
-    border: 2px solid #1F3E5A !important;
-    background: transparent !important;
-    border-radius: 5px;
-    color: black !important;
-}
+/* .view-project {
+    width: '180px',
+    height: '44px',
+    fontWeight: '500',
+    fontSize: '20px',
+    marginTop: '2.5%',
+    border: '2px solid #1F3E5A !important',
+    background: 'transparent !important',
+    borderRadius: '5px',
+    color: 'black !important',
+} */
 
-.card-wrapper {
+/* .card-wrapper {
     width: 100%;
     min-height: 350px;
     
@@ -82,4 +63,9 @@
 
     overflow-x: scroll;
     overflow-y: hidden;
+} */
+
+.card-wrapper::-webkit-scrollbar {
+    height: 0.1em;
+    width: 1px;
 }
