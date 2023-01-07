@@ -7,8 +7,7 @@ import {VscOrganization} from 'react-icons/vsc'
 const Statistics = () => {
   return (
     <Box            
-      bgColor='#088C7F'      
-      mixBlendMode='lighten'     
+      bgColor='#088C7F'
       display="flex"
       flexDir={{base: 'column', md: 'row' , lg: 'row'}}
       alignItems="center"
