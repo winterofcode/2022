@@ -10,7 +10,7 @@ import {
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 // import Rewards from './components/rewards/Rewards';
-import Timeline from './components/Timeline';
+// import Timeline from './components/Timeline';
 
 const Home = React.lazy(() => import("./views/Home"));
 const Team = React.lazy(() => import("./views/Team"));
@@ -28,7 +28,7 @@ function App() {
                 {/* <Navbar /> */}
                 <Suspense>
                     <Routes>
-                        <Route exact path="/" element={<Timeline/>} />
+                        <Route exact path="/" element={<Home/>} />
                         <Route exact path="/organisers" element={<Team />} />
                         <Route
                             path="*"
