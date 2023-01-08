@@ -1,6 +1,7 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
+    background-color: #012325 !important;
 }
 .App {
     display: flex;

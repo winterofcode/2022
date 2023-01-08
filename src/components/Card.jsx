@@ -8,20 +8,20 @@ import orgLogo2 from "../assets/orgLogo2.png"
 function Card() {
     return (
         <>
-            <Box className='App' m={10}>
+            <Box className='App' p={10}>
                 <Box className='card-wrapper'
                     __css={{
                         width: '100%',
                         minHeight: 'auto',
                         maxHeight: 'auto',
-                        backgroundColor: '#1F3E5A',
+                        // backgroundColor: '#1F3E5A',
                         display: 'flex',
                         flexDirection: 'row',
                         justifyContent: 'center',
                         alignItems: 'center',
                         flexWrap: 'wrap',
 
-                        gap: '10px',
+                        gap: '30px',
                     }}>
                     {
                         cards.map((x) => {
@@ -102,8 +102,7 @@ function Card() {
                         })
                     }
                 </Box>
-
-
+            </Box>
         </>
     )
 }
