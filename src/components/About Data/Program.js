@@ -20,10 +20,10 @@ const Program = () => {
       filter={"drop-shadow(0px 7px 4px rgba(0, 0, 0, 0.25))"}
     >
       <Box
-        mx={7}
+        mx={{base: 3, md:7}}
         my={14}
         py={10}
-        px={16}
+        px={{base: 6, md:16}}
         maxW={"1100px"}
         backdropFilter={"blur(50px) backdropSaturate(200%)"}
         bg="linear-gradient(180deg, rgba(8, 140, 127, 0.5) 0%, rgba(1, 35, 37, 0.5) 100%);"

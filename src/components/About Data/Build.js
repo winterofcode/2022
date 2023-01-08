@@ -7,7 +7,7 @@ import mentors from "../../assets/motive_mentor.png";
 const Build = () => {
   return (
     <Box bg="#012325" color="white">
-      <Box p={10} m={10} mt={0} textAlign={"center"} color="white">
+      <Box p={{base: 2, md:10}} m={10} mt={0} textAlign={"center"} color="white">
         <Box>
           <Text fontSize="3xl" fontWeight={600}>
             Let's Build Something Awesome Together
