@@ -19,6 +19,16 @@ const cards = [
         "title": "Canvasbird",
         "no_of_projects": "1 Project"
     },
+    {
+        "src": "https://winterofcode.com/static/media/canvasbird.a4c243fd.png",
+        "title": "Canvasbird",
+        "no_of_projects": "1 Project"
+    },
+    {
+        "src": "https://winterofcode.com/static/media/canvasbird.a4c243fd.png",
+        "title": "Canvasbird",
+        "no_of_projects": "1 Project"
+    },
 ]
 
 export default cards;
