@@ -108,7 +108,7 @@ export default function Timeline() {
     
     const displayDesktop = () => {
     return (
-        <Box my="70px" width="100%" height="100%">
+        <Box my="70px">
             <Heading justify="center" align="center" mb="2rem">
                 <Text color="white" textAlign="center" fontSize="45px">Timeline</Text>
             </Heading>
@@ -117,7 +117,7 @@ export default function Timeline() {
             {timelineCardData.map(cardItem =>{
                 return (
                     <VerticalTimelineElement 
-                    style={{width:"1064px", height:"184px" , position : "relative", left: "53px"}}
+                    // style={{width:"1064px", height:"184px" , position : "relative", left: "53px"}}
                     key={cardItem.id}
                     className="vertical-timeline-element--education"
                     contentStyle={{ borderTop: `5px solid ${cardItem.bgIconColor}`, color: 'white' }}    // dont delete this, will be needed to update.
