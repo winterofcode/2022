@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+.nhome{
+    background: url("../assets/homebg.webp");
+    /* background-image: url("https://tenor.com/3aP5.gif");
+    background-size: cover; */
+    background-size: cover;
+background-position: center, center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
+    animation: zoom-out 1s ease ;
+    position: relative;
+    width: 100vw;
+   height: 100vh;
+}
+@keyframes zoom-out {
+    0% {
+      transform: scale(1.5, 1.5);
+    }
+    /* 50% {
+      transform: scale(1.2, 1.2);
+    } */
+    100% {
+      transform: scale(1, 1);
+    }
+}
+@font-face {
+    font-family: Stella;
+    src: url("../assets/fonts/Stella\ Demo.otf") format("opentype");
+}
+
+.slide-down{
+    font-family: Stella;
+    font-style: Regular;
+    width: 100%;
+    position: absolute;
+    top:20vh;
+    left:0;
+    text-align: center;
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 7rem;
+    color: white;
+    animation: 3s slide-down;
+}
+  @keyframes slide-down {
+    from {
+      margin-top: -15%;
+    }
+    to {
+      margin-top: 0%;
+    }
+  }
+.slide-lr{
+    position: absolute;
+    top:calc(20vh + 5rem);
+    width:100%;
+    text-align: center;
+    overflow: hidden;
+}
+.slide-l{
+    font-family: Stella;
+    font-size: 4rem;
+    color:white;
+    font-weight: 400;
+    line-height: 5rem;
+    animation: 3s slide-left ;
+}
+.slide-r{
+    font-family: Stella;
+    font-size: 6rem;
+    color:white;
+    font-weight: 400;
+    line-height:6rem;
+    animation:3s slide-right;
+}
+@keyframes slide-left {
+    from {
+      margin-right: 25%;
+    }
+    to {
+      margin-right: 0%;
+    }
+  }
+  @keyframes slide-right {
+    from {
+      margin-left: 25%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+.reg-btn{
+position:absolute;
+text-align: center;
+top: calc(20vh + 5rem + 7em);
+left:0;
+width:100%;
+}
+.wreg{
+width: 200px;
+height:63px;
+background: #058D8F;
+filter: blur(0.5px);
+border-radius: 20px;
+font-weight:600;
+font-size: 1.5rem;
+font-family: Poppins;
+color: white;
+animation: 3s btn-ani;
+cursor: pointer;
+  }
+@keyframes btn-ani {
+    from{
+        background: none;
+        border: 2px solid #FFFFFF;
+        filter: blur(8px);
+        border-radius: 20px;
+    }
+    to{
+        background: #058D8F;
+        filter: blur(0.5px);
+        border-radius: 20px;
+    }
+}
+.ltree{
+    height:50vh;
+    width: 50vw;
+    position: absolute;
+    left:0;
+    top:50vh;
+    animation: 2s ltree-ani;
+}
+.ltree img{
+    height:100%;
+    width: 100%;
+}
+.rtree{
+    height:50vh;
+    width:40vw;
+    position: absolute;
+    left:60vw;
+    top:50vh;
+    animation: 1s rtree-ani;
+}
+.rtree img{
+    height:100%;
+    width: 100%;
+}
+.ltree-2{
+    display: none;
+}
+@keyframes ltree-ani {
+    from{
+     left:-50vw;
+    }
+    to{
+       left:0;
+    }
+}
+@keyframes rtree-ani {
+    from{
+     left:120vw;
+    }
+    to{
+       left:60vw;
+    }
+}
+.rtree-2{
+    display: none;
+ }
+
+
+/*  */
+@media screen and (min-width: 660px){   
+.slide-down{
+    font-size: 10rem;
+    list-style:10rem;
+}
+.slide-l{
+    font-size: 7rem;
+    line-height: 8rem;
+}
+.slide-r{
+    font-size: 9rem;
+    line-height: 9rem;
+}
+.slide-lr{
+    top: calc(20vh + 5rem);
+}
+@keyframes slide-left {
+    from {
+      margin-right: 30%;
+    }
+    to {
+      margin-right: 0%;
+    }
+  }
+  @keyframes slide-right {
+    from {
+      margin-left: 30%;
+    }
+    to {
+      margin-left: 0%;
+    }
+  }
+  .reg-btn{
+    top:calc(20vh + 5rem + 9.5em)
+  }
+  .wreg{
+    font-size: 2rem;
+    width:304px;
+  }
+  .rtree{
+    height:50vh;
+    width:20vw;
+    position: absolute;
+    left:80vw;
+    top:50vh;
+    animation: 2.4s rtree-ani-2;
+}
+.ltree{
+    height:50vh;
+    width: 25vw;
+    position: absolute;
+    left:0;
+    top:50vh;
+    animation: 2.4s ltree-ani-2;
+}
+@keyframes ltree-ani {
+    from{
+     left:-25vw;
+    }
+    to{
+       left:0;
+    }
+}
+@keyframes rtree-ani {
+    from{
+     left:110vw;
+    }
+    to{
+       left:80vw;
+    }
+}
+.ltree-2{
+    display: inline;
+    height:55vh;
+    width: 30vw;
+    position: absolute;
+    left:2vw;
+    top:50vh;
+    animation: 1.5s ltree-ani-2;
+}
+.ltree-2 img{
+    width:100%;
+    height: 100%;
+}
+@keyframes ltree-ani-2 {
+    from{
+     top:80vh;
+    }
+    to{
+       top:50vh;
+    }
+}
+.rtree-2{
+    display: inline;
+    height:50vh;
+    width:20vw;
+    position: absolute;
+    left:78vw;
+    top:50vh;
+    animation: 1.5s rtree-ani-2;
+}
+.rtree-2 img{
+    width: 100%;
+    height: 100%;
+}
+@keyframes rtree-ani-2 {
+    from{
+     top:80vh;
+    }
+    to{
+       top:50vh;
+    }
+}
+
+}

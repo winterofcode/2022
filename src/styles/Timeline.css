@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.timeline-font{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+}
+
+.timeline-date-font{
+    padding: 0 2rem 0 2rem !important;
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: white !important;
+}
+.timeline-date-mobile-font{
+    font-size: 16px !important;
+}

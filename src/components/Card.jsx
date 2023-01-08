@@ -13,11 +13,8 @@ function Card() {
                     __css={{
                         width: '100%',
                         minHeight: 'auto',
-
                         maxHeight: 'auto',
                         backgroundColor: '#1F3E5A',
-
-
                         display: 'flex',
                         flexDirection: 'row',
                         justifyContent: 'center',
@@ -105,7 +102,6 @@ function Card() {
                         })
                     }
                 </Box>
-            </Box>
 
 
         </>

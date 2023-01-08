@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik+Bubbles');
+@import url('https://fonts.googleapis.com/css?family=Creepster');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #FEDCC8;
+}
+
+.home {
+    position: relative;
+}
+
+.parallax {
+    -webkit-perspective: 100px;
+    perspective: 100px;
+    height: calc(100vh - 50px);
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 50%;
+    right: 0;
+    bottom: 0;
+    margin-left: -55vw;
+
+}
+
+.parallax__layer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 118vw;
+}
+
+.parallax__layer img {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    height: 90%;
+    /* transform: scale(2); */
+}
+
+.parallax__cover {
+    background: #12172e;
+    display: block;
+    position: absolute;
+    top: calc(100%);
+    width: 100vw;
+    /* left: 0; */
+    right: 0;
+    /* min-height: 2000px; */
+    z-index: 2;
+}
+
+.parallax__layer__0 {
+    -webkit-transform: translateZ(-300px) scale(4);
+    transform: translateZ(-300px) scale(4);
+    filter: hue-rotate(-150deg);
+}
+
+.parallax__layer__1 {
+    -webkit-transform: translateZ(-250px) scale(3.5);
+    transform: translateZ(-250px) scale(3.5);
+    filter: hue-rotate(-150deg);
+}
+
+.parallax__layer__2 {
+    -webkit-transform: translateZ(-200px) scale(3);
+    transform: translateZ(-200px) scale(3);
+    filter: hue-rotate(-150deg);
+}
+
+.parallax__layer__3 {
+    -webkit-transform: translateZ(-150px) scale(2.5);
+    transform: translateZ(-150px) scale(2.5);
+    filter: hue-rotate(-150deg);
+}
+
+.parallax__layer__4 {
+    -webkit-transform: translateZ(-100px) scale(2);
+    transform: translateZ(-100px) scale(2);
+    filter: hue-rotate(-150deg);
+}
+
+.parallax__layer__5 {
+    -webkit-transform: translateZ(-50px) scale(1.5);
+    transform: translateZ(-50px) scale(1.5);
+}
+
+.parallax__layer__5 img {
+    filter: hue-rotate(-150deg);
+}
+
+.parallax__layer__6 {
+    -webkit-transform: translateZ(0px) scale(1);
+    transform: translateZ(0px) scale(1);
+    filter: hue-rotate(-150deg);
+}
+.parallax-title{
+    display: flex;
+    flex-direction: column;
+    left:0;
+    right:0;
+    margin-right: auto;
+    margin-left: auto;
+    position: absolute;
+    top: 20vh;;
+    /* left: 0; */
+    z-index: 5;
+    width:50vw;
+    height:40vh;
+    
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.title {
+    /* position: absolute; */
+    height: 50%;
+
+    /* font-family: 'Playfair Display';
+    font-style: normal; */
+    /* font-weight: 400; */
+    font-family: 'Roboto', sans-serif;
+    font-size: 6rem;
+    /* line-height: 152px; */
+    /* color: #D4F2D2; */
+    color: white;
+
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+    /* top: 22vh;
+    left: 38vw; */
+    /* z-index: 5; */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #34113f;
+    text-align: center;
+}
+
+.registration-btn {
+    box-sizing: border-box;
+    margin: 0 auto;
+    /* top: 48vh;
+    left: 47vw; */
+    /* position: absolute; */
+    width: 40%;
+    height: 22%;
+    background: #ecfffb;
+    border: 1px solid grey;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    color: #004b92;
+    font-size: 1.8rem;
+    font-weight: 700;
+    font-family: sans-serif;
+    /* z-index: 10; */
+    /* cursor: pointer; */
+}
+@media screen and (max-width: 1260px) {
+    .parallax-title{
+        width:80vw;
+    }
+    .registration-btn{
+        width: 45%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .parallax-title{
+        width:90vw;
+    }
+    .title{
+        font-size: 5rem;
+    }
+    .registration-btn{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .parallax__layer {
+        left: 0px !important;
+    }
+}
+@media screen and (max-width: 600px) {
+.parallax-title{
+    width: 99vw;
+}
+.title{
+    font-size: 3.5rem;
+    height: 35%;
+}
+.registration-btn{
+    width: 60%;
+    font-size: 1.5rem;
+    height:18%;
+}
+}
+@media screen and (max-width: 400px) {
+    .title{
+        font-size: 2.8rem;
+        padding-left: 12px;
+    }
+}
+
+.parallax_mix {
+    height: 100px !important;
+    width: 100vw;
+    background: rgb(17,21,32);
+    background: linear-gradient(0deg, rgba(17,21,32,1) 0%, rgba(0,33,19,1) 100%);
+}
