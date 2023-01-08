@@ -55,8 +55,9 @@ const SocialButton = ({
 export default function Footer() {
   return (
     <Box
-      bg={'#171923'}
-      color={'#E2E8F0'} 
+      bg={'#96D4DC'}
+      color={'black'} 
+      fontWeight={'600'}
       pos="relative"
       zIndex={300}>
       <Container as={Stack} maxW={'6xl'} py={10}>
@@ -72,7 +73,7 @@ export default function Footer() {
                     Winter of Code
               </Text>
             </HStack>
-            <Text fontSize={'sm'} color={'rgb(160 160 160)'} textAlign={{base: 'center', md: 'initial'}}>
+            <Text fontSize={'sm'} color={'black'} fontWeight={'400'} textAlign={{base: 'center', md: 'initial'}}>
               The Winter of Code is a program aimed to increase participation for the Google Summer of Code program among students in colleges and universities.
             </Text>
             <Stack direction={'row'} spacing={6}>
@@ -86,7 +87,7 @@ export default function Footer() {
                 <FaTwitter />
               </SocialButton>
             </Stack>
-            <Text fontSize={'sm'} color={'rgb(160 160 160)'}>
+            <Text fontSize={'sm'} color={'black'} fontWeight={'400'}>
                 © Winter of Code 2022
             </Text>
           </Stack>
@@ -95,46 +96,46 @@ export default function Footer() {
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://intro2ml.dscnsec.com/'} color={'rgb(160 160 160)'} fontSize={'15px'}>Intro to ML</Link>
+            }} href={'https://intro2ml.dscnsec.com/'} color={'black'} fontWeight={'400'} fontSize={'15px'}>Intro to ML</Link>
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://logo-generator.dscnsec.com/'} color={'rgb(160 160 160)'} fontSize={'15px'}>Logo Generator</Link>
+            }} href={'https://logo-generator.dscnsec.com/'} color={'black'} fontWeight={'400'} fontSize={'15px'}>Logo Generator</Link>
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://go.dscnsec.com/'} color={'rgb(160 160 160)'} fontSize={'15px'}>DSC NSEC Go</Link>
+            }} href={'https://go.dscnsec.com/'} color={'black'} fontWeight={'400'} fontSize={'15px'}>DSC NSEC Go</Link>
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://www.youtube.com/playlist?list=PLLGfrNGZ7g4MzarnbBN-DC_AGErhYMC2s'} color={'rgb(160 160 160)'} fontSize={'15px'}>Full Stack Projects</Link>
+            }} href={'https://www.youtube.com/playlist?list=PLLGfrNGZ7g4MzarnbBN-DC_AGErhYMC2s'} color={'black'} fontWeight={'400'} fontSize={'15px'}>Full Stack Projects</Link>
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://gcp2021.dscnsec.com/'} color={'rgb(160 160 160)'} fontSize={'15px'}>30 Days of Google Cloud</Link>
+            }} href={'https://gcp2021.dscnsec.com/'} color={'black'} fontWeight={'400'} fontSize={'15px'}>30 Days of Google Cloud</Link>
           </Stack>
           <Stack align={{base: 'center', md: 'flex-start'}}>
             <ListHeader>DSC NSEC Handles</ListHeader>
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://www.instagram.com/dscnsec/'} color={'rgb(160 160 160)'} fontSize={'15px'}>Instagram</Link>
+            }} href={'https://www.instagram.com/dscnsec/'} color={'black'} fontWeight={'400'} fontSize={'15px'}>Instagram</Link>
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://twitter.com/dscnsec'} color={'rgb(160 160 160)'} fontSize={'15px'}>Twitter</Link>
+            }} href={'https://twitter.com/dscnsec'} color={'black'} fontWeight={'400'} fontSize={'15px'}>Twitter</Link>
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://t.me/dscnsec'} color={'rgb(160 160 160)'} fontSize={'15px'}>Telegram</Link>
+            }} href={'https://t.me/dscnsec'} color={'black'} fontWeight={'400'} fontSize={'15px'}>Telegram</Link>
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://www.youtube.com/channel/UCKKrqXvTWZm0tULPxqv1NPg'} color={'rgb(160 160 160)'} fontSize={'15px'}>Youtube</Link>
+            }} href={'https://www.youtube.com/channel/UCKKrqXvTWZm0tULPxqv1NPg'} color={'black'} fontWeight={'400'} fontSize={'15px'}>Youtube</Link>
             <Link _hover={{
               textDecoration: 'none',
               color: '#6188ff',
-            }} href={'https://www.facebook.com/dscnsec/'} color={'rgb(160 160 160)'} fontSize={'15px'}>Facebook</Link>
+            }} href={'https://www.facebook.com/dscnsec/'} color={'black'} fontWeight={'400'} fontSize={'15px'}>Facebook</Link>
           </Stack>
         </SimpleGrid>
       </Container>
@@ -144,21 +145,21 @@ export default function Footer() {
           _before={{
             content: '""',
             borderBottom: '1px solid',
-            borderColor: useColorModeValue('gray.200', 'gray.700'),
+            borderColor: useColorModeValue('blackAlpha.200', 'blackAlpha.700'),
             flexGrow: 1,
           }}
           _after={{
             content: '""',
             borderBottom: '1px solid',
-            borderColor: useColorModeValue('gray.200', 'gray.700'),
+            borderColor: useColorModeValue('blackAlpha.200', 'blackAlpha.700'),
             flexGrow: 1,
           }}>
           <Image borderRadius={'full'} src={trans} height={100} width={100}></Image>
         </Flex>
-        <Text fontSize={'sm'} textAlign={'center'} color={'#0F9D58'}>
+        <Text fontSize={'sm'} textAlign={'center'} color={'black'} fontWeight={'400'}>
             Made with 💜 by Web Team
         </Text>
-        <Text pt={1} fontSize={'sm'} textAlign={'center'} color={'rgb(160 160 160)'}>
+        <Text pt={1} fontSize={'sm'} textAlign={'center'} color={'black'} fontWeight={'400'}>
           © 2022 DSC NSEC. All rights reserved
         </Text>
       </Box>
