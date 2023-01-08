@@ -3,11 +3,14 @@
     background: url("../assets/homebg.webp");
     /* background-image: url("https://tenor.com/3aP5.gif");
     background-size: cover; */
-    background-size: 100% 100%;
+    background-size: cover;
+background-position: center, center;
     background-repeat: no-repeat;
-    height: 100vh;
+    /* height: 100vh; */
     animation: zoom-out 1s ease ;
     position: relative;
+    width: 100vw;
+   height: 100vh;
 }
 @keyframes zoom-out {
     0% {
