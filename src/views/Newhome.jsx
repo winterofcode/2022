@@ -4,9 +4,15 @@ import ltree from "../assets/ltree.webp"
 import rtree from "../assets/ritree.webp"
 import ltree_2 from "../assets/ltree-2.webp"
 import rtree_2 from "../assets/rtree-2.webp"
+import Snowfall from 'react-snowfall'
 const NewHome=()=>{
     return(
         <div className="nhome">
+            <Snowfall
+            speed={[2.0,5.0]}
+            snowflakeCount={150}
+            wind={[1,7]}
+            />
             <div className="slide-down">Winter</div>
             <div className="slide-lr">
                 <span className="slide-l">of </span>
