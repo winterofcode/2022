@@ -12,7 +12,7 @@ function Card() {
                 <Box className='card-wrapper'
                     __css={{
                         width: '100%',
-                        minHeight: '350px',
+                        minHeight: 'auto',
 
                         maxHeight: 'auto',
                         backgroundColor: '#1F3E5A',
@@ -20,13 +20,11 @@ function Card() {
 
                         display: 'flex',
                         flexDirection: 'row',
-                        justifyContent: 'start',
+                        justifyContent: 'center',
                         alignItems: 'center',
+                        flexWrap: 'wrap',
 
                         gap: '10px',
-
-                        overflowX: 'scroll',
-                        overflowY: 'hidden',
                     }}>
                     {
                         cards.map((x) => {
