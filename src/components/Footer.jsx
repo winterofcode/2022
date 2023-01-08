@@ -16,6 +16,7 @@ import {
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import logo from "../assets/org-logo.png";
 import trans from "../assets/transparent.svg";
+import winter from "../assets/winterNight.png";
 
 const ListHeader = ({ children }) => {
   return (
@@ -56,6 +57,8 @@ export default function Footer() {
   return (
     <Box
       bg={'#96D4DC'}
+      bgImage={winter}
+      bgRepeat='no-repeat'
       color={'black'} 
       fontWeight={'600'}
       pos="relative"
@@ -65,7 +68,7 @@ export default function Footer() {
           templateColumns={{ sm: '2fr', md: '2fr 1fr 1fr' }}
           spacing={'8'}>
           <Stack spacing={6} align={{base: 'center', md: 'flex-start'}}>
-            <HStack >
+            <HStack>
               <Image src={logo} height={45} width={45}></Image>
               <Text
                 fontSize={'20.8px'}
@@ -88,7 +91,7 @@ export default function Footer() {
               </SocialButton>
             </Stack>
             <Text fontSize={'sm'} color={'black'} fontWeight={'400'}>
-                © Winter of Code 2022
+                © Winter of Code 2023
             </Text>
           </Stack>
           <Stack align={{base: 'center', md: 'flex-start'}}>
