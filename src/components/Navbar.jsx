@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <Box bg={'gray.900'} px={{base: '4', md: '20'}} pos='sticky' top={'0'} backdropFilter='auto' zIndex={1000}>
+      <Box bg={'transparent'} bgColor={'#2f8075'} boxShadow={'2xl'} px={{base: '4', md: '20'}} pos='fixed' backdropFilter='auto' zIndex={1000} w={'100vw'}>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}

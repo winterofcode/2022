@@ -15,8 +15,8 @@ import {
 
 import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
 import logo from "../assets/org-logo.png";
-import trans from "../assets/transparent.svg";
 import winter from "../assets/winterNight.png";
+import bgRem from "../assets/bg-removed.png";
 
 const ListHeader = ({ children }) => {
   return (
@@ -57,7 +57,7 @@ export default function Footer() {
   return (
     <Box
       bg={'#96D4DC'}
-      bgImage={winter}
+      bgImage={{base: 'none', md: winter}}
       bgRepeat='no-repeat'
       color={'black'} 
       fontWeight={'600'}
@@ -157,13 +157,13 @@ export default function Footer() {
             borderColor: useColorModeValue('blackAlpha.200', 'blackAlpha.700'),
             flexGrow: 1,
           }}>
-          <Image borderRadius={'full'} src={trans} height={100} width={100}></Image>
+          <Image borderRadius={'full'} src={bgRem} height={100} width={100}></Image>
         </Flex>
         <Text fontSize={'sm'} textAlign={'center'} color={'black'} fontWeight={'400'}>
             Made with 💜 by Web Team
         </Text>
         <Text pt={1} fontSize={'sm'} textAlign={'center'} color={'black'} fontWeight={'400'}>
-          © 2022 DSC NSEC. All rights reserved
+          © 2023 DSC NSEC. All rights reserved
         </Text>
       </Box>
     </Box>
