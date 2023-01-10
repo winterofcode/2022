@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 body {
     min-height: 100vh;
     overflow-x: hidden;
     background-color: #012325 !important;
+    font-family: Poppins !important;
 }
 .App {
     display: flex;
