@@ -6,15 +6,13 @@ import {
   IconButton,
   useDisclosure,
   Stack,
-  Image,
-  Collapse,
+  Image
 } from '@chakra-ui/react';
 import { Link } from "react-router-dom";
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
-//import "./Navbar.css"
 
 import logo from '../assets/org-logo.png';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
