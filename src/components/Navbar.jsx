@@ -7,20 +7,53 @@ import {
   useDisclosure,
   Stack,
   Image,
-  Text,
   Collapse,
 } from '@chakra-ui/react';
 import { Link } from "react-router-dom";
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
+//import "./Navbar.css"
 
 import logo from '../assets/org-logo.png';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const [color, setColor] = useState(false);
+
+  const changeColor = () => {
+    if (window.scrollY >= 700) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  }
+  
+  window.addEventListener('scroll', changeColor);
+
   return (
     <>
-      <Box bg={'transparent'} bgColor={'#2f8075'} boxShadow={'2xl'} px={{base: '4', md: '20'}} pos='fixed' backdropFilter='auto' zIndex={1000} w={'100vw'}>
+      <Box className={color ? 'Navbar-scrolled' : 'Navbar'} px={{base: '4', md: '20'}} pos='fixed' zIndex={1000} w={'100vw'}>
+        <style>
+          {`
+            .Navbar {
+              background-color: transparent !important;
+            
+                -webkit-transition: all ease-out .5s;
+              -moz-transition: all ease-out .5s;
+              -o-transition: all ease-out .5s;
+              transition: all ease-out .5s;
+            }
+            .Navbar-scrolled {
+              background-color: #057368 !important;
+
+                -webkit-transition: all ease-out .3s;
+              -moz-transition: all ease-out .3s;
+              -o-transition: all ease-out .3s;
+              transition: all ease-out .3s;
+            }
+          `}
+        </style>
         <Flex h={20} alignItems={'center'} justifyContent={'space-between'}>
           <IconButton
             size={'md'}
@@ -28,6 +61,7 @@ export default function Navbar() {
             aria-label={'Open Menu'}
             display={{ lg: 'none' }}
             onClick={isOpen ? onClose : onOpen}
+            bg='transparent'
           />
           <HStack spacing={8} alignItems={'center'}>
             <HStack>
@@ -114,6 +148,7 @@ export default function Navbar() {
         </Flex>
 
         {isOpen ? (
+          
           <Box pb={4} display={{ md: 'none' }}>
             <Stack as={'nav'} spacing={4}>
                 <ChakraLink
