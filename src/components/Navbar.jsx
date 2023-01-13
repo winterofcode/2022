@@ -35,6 +35,10 @@ export default function Navbar() {
     }
   }, [])
 
+  useEffect(() => {
+    isOpen ? setColor(true) : setColor(false)
+  }, [isOpen])
+
   return (
     <>
       <Box className={color ? 'Navbar-scrolled' : 'Navbar'} px={{base: '4', md: '20'}} pos='fixed' zIndex={1000} w={'100vw'}>
@@ -62,18 +66,21 @@ export default function Navbar() {
           <IconButton
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon/>}
+            color="white"
+            border="1px solid white"
             aria-label={'Open Menu'}
             display={{ lg: 'none' }}
             onClick={isOpen ? onClose : onOpen}
             bg='transparent'
           />
           <HStack spacing={8} alignItems={'center'}>
-            <HStack>
+            <HStack gap="6px">
               <Image src={logo} h={'45'} w={'45'}></Image>
-              <ChakraLink fontSize={'28px'} fontWeight={'700'} color='white' style={{ textDecoration: 'none' }} href='/'>Winter of Code</ChakraLink>
+              <ChakraLink fontSize={'20px'} fontWeight={'700'} color='white' style={{ textDecoration: 'none' }} href='/'>Winter of Code</ChakraLink>
             </HStack>
           </HStack>
-          <Flex alignItems={'center'}>
+          <Box h="40px" w="40px" display={{lg:"none"}}></Box>
+          <Flex alignItems={'center'} display={{ base: 'none', lg: 'flex' }}>
             <HStack
               as={'nav'}
               spacing={7}
