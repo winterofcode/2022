@@ -54,7 +54,9 @@ export default function Navbar() {
               transition: all ease-out .5s;
             }
             .Navbar-scrolled {
-              background-color: #057368 !important;
+              background-color: #057368b5 !important;
+              backdrop-filter: blur(10px);
+              // background-color: #057368 !important;
 
                 -webkit-transition: all ease-out .3s;
               -moz-transition: all ease-out .3s;
