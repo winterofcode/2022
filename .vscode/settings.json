@@ -1,0 +1,6 @@
+{
+    "yaml.schemas": {
+        "file:///home/codespace/.vscode-remote/extensions/docsmsft.docs-yaml-0.2.9/out/yaml-support/toc.schema.json": "/toc\\.yml/i",
+        "https://json.schemastore.org/github-workflow.json": "file:///workspaces/2022/.github/workflows/deploy.yml"
+    }
+}
