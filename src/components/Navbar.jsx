@@ -28,16 +28,17 @@ export default function Navbar() {
   }
   
   useEffect(() => {
+    location.pathname === "/" && isOpen ? setColor(true) : setColor(false)
+  }, [isOpen])
+  
+  useEffect(() => {
     if (location.pathname === "/") {
       window.addEventListener('scroll', changeColor);
     } else {
       setColor(true)
     }
+    return () => window.removeEventListener("scroll", changeColor);
   }, [])
-
-  useEffect(() => {
-    isOpen ? setColor(true) : setColor(false)
-  }, [isOpen])
 
   return (
     <>
