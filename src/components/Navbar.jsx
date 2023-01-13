@@ -8,15 +8,15 @@ import {
   Stack,
   Image
 } from '@chakra-ui/react';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 
 import logo from '../assets/org-logo.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-
+  const location = useLocation();
   const [color, setColor] = useState(false);
 
   const changeColor = () => {
@@ -27,7 +27,13 @@ export default function Navbar() {
     }
   }
   
-  window.addEventListener('scroll', changeColor);
+  useEffect(() => {
+    if (location.pathname === "/") {
+      window.addEventListener('scroll', changeColor);
+    } else {
+      setColor(true)
+    }
+  }, [])
 
   return (
     <>
