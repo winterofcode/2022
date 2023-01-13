@@ -1,7 +1,7 @@
 .apply-section {
     width: 100%;
     height: auto;
-    background: linear-gradient(to right, #051343 0%, #0d2c8f 0%, #051343 100%);
+    background: linear-gradient(274.74deg, #75B8C0 0%, #FFFFFF 100%);
 
     display: flex;
     flex-direction: column;
@@ -14,15 +14,18 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: 500;
 }
 
 .timeline {
-    color: gold;
+    color: #FF8A00;
+    font-weight: 600;
 }
 
 .timeline-text-section {
     display: flex;
     flex-direction: row;
+    font-weight: 600;
 }
 
 .text {
@@ -30,8 +33,8 @@
 }
 
 .apply-btn {
-    background: linear-gradient(to right, #054a8f 0%, #054a8f 0%, #0655a5 100%) !important;
-    border-radius: 12px !important;
+    background: #088C7F !important;
+    border-radius: 15px !important;
 }
 
 @media (max-width: 600px) {
