@@ -89,6 +89,7 @@ export default function Navbar() {
                 <ChakraLink
                   px={2}
                   py={1}
+                  target="_blank"
                   href='https://dscnsec.com/'
                   fontWeight={'500'}
                   rounded={'md'}
@@ -142,26 +143,13 @@ export default function Navbar() {
                   }}>
                   FAQ
                 </ChakraLink>
-                <ChakraLink
-                  px={2}
-                  py={1}
-                  href='#'
-                  fontWeight={'500'}
-                  rounded={'md'}
-                  color='white'
-                  _hover={{
-                    textDecoration: 'none',
-                    bg: '#4285F4',
-                  }}>
-                  Contact Us
-                </ChakraLink>
             </HStack>
           </Flex>
         </Flex>
 
         {isOpen ? (
           
-          <Box pb={4} display={{ md: 'none' }}>
+          <Box pb={4} display={{ lg: 'none' }}>
             <Stack as={'nav'} spacing={4}>
                 <ChakraLink
                   px={2}
@@ -214,19 +202,6 @@ export default function Navbar() {
                     color: '#4285F4',
                   }}>
                   FAQ
-                </ChakraLink>
-                <ChakraLink
-                  px={2}
-                  py={1}
-                  href='#'
-                  fontWeight={'500'}
-                  rounded={'md'}
-                  color='white'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: '#4285F4',
-                  }}>
-                  Contact Us
                 </ChakraLink>
             </Stack>
           </Box>

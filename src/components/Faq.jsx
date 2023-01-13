@@ -13,7 +13,7 @@ import data from "./Faq Data/faqData";
 
 const faq = () => {
   return (
-    <div style={{backgroundColor: '#012325'}}>
+    <div style={{backgroundColor: '#012325'}} id="faq">
       <Container        
         maxW="container.sm"
         textAlign="center"
