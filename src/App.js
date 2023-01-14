@@ -27,7 +27,7 @@ function App() {
     return (
         <ChakraProvider initialColorMode={theme.config.initialColorMode}>
             <Router>
-                {/* <Navbar /> */}
+                <Navbar />
                 <Suspense>
                     <Routes>
                         <Route exact path="/" element={<Home/>} />

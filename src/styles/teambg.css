@@ -6,7 +6,8 @@
 
 .teams-container{
     min-height: 100vh;
-    background: rgb(9, 6, 34) !important;
+    /* background: rgb(9, 6, 34) !important; */
+    background: #00161a !important;
     overflow: hidden !important;
 }
 
