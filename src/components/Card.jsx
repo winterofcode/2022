@@ -102,6 +102,7 @@ function Card() {
                         })
                     }
                 </Box>
+            </Box>
 
 
         </>

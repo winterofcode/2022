@@ -14,7 +14,7 @@ import Footer from "../components/Footer";
 
 const NewHome=()=>{
     return(
-      </>
+      <>
         <div className="nhome">
             <Snowfall
             speed={[2.0,5.0]}
