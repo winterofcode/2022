@@ -167,9 +167,9 @@ export default function Navbar() {
                   GDSC NSEC
                 </ChakraLink>
                 <ChakraLink
+                  href="/organisers"
                   px={2}
                   py={1}
-                  href='#organisers'
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'

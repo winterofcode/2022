@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react"
 import { Image, Box } from "@chakra-ui/react"
+import defaultDp from "../assets/default_dp.webp"
 
 export default function ImageLoad({src, ...rest}) {
     const image = useRef()
@@ -16,7 +17,7 @@ export default function ImageLoad({src, ...rest}) {
     return (
       <Box>
         <Image ref={image} {...rest} />
-        <Image ref={dummy} src="https://i.ibb.co/hVBWGzF/default-dp.webp" {...rest}/>
+        <Image ref={dummy} src={defaultDp} {...rest}/>
 
       </Box>
     );

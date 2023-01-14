@@ -115,9 +115,9 @@ const Cards = ()=>{
                                 <Flex className='floating' gap={{base: "10px", sm:"0"}} boxShadow='2xl' p='6' roundedRight={index%2===0 ? '2xl': '0'} roundedLeft={index%2!==0 ? '2xl': '0'} bg='whiteAlpha.100' width={{base: '85vw', sm: '450px'}} alignItems='center' direction={{base: 'column', sm: index%2!==0?'row' : 'row-reverse'}} justifyContent='space-between' my='5' backdropFilter='blur(10px)'>
                                     <ImageLoad src={ img } boxSize={{base: "120px", md: "170px"}} objectFit="cover" alt='user' borderRadius='full' transition='all 0.3s' />
                                     <Flex direction="column" alignItems={{base: "center", sm: "initial"}} paddingLeft={{base: "0", sm: "6"}} width='60%'>
-                                        <Text textAlign={{base: "center", sm: "left"}} fontSize='3xl'>{name}</Text>
+                                        <Text textAlign={{base: "center", sm: "left"}} fontSize='2xl'>{name}</Text>
                                         <br />
-                                        <Text fontSize='xl'>{desg}</Text>
+                                        <Text fontSize='17px'>{desg}</Text>
                                         <br />
                                         <Flex gap='10px'>
                                         {
