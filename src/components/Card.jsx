@@ -1,11 +1,25 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Box, Button } from '@chakra-ui/react'
 import cards from '../data/card-data'
 import "../styles/Card.css"
 import orgLogo2 from "../assets/orgLogo2.png"
+import {
+    Modal,
+    ModalOverlay,
+    ModalContent,
+    ModalHeader,
+    ModalFooter,
+    ModalBody,
+    ModalCloseButton,
+    useDisclosure,
+    Text,
+} from '@chakra-ui/react'
 
 
 function Card() {
+    const { isOpen, onOpen, onClose } = useDisclosure()
+    const [contentOfModal, setContentOfModal] = useState([])
+
     return (
         <>
             <Box className='App' p={10}>
@@ -14,7 +28,6 @@ function Card() {
                         width: '100%',
                         minHeight: 'auto',
                         maxHeight: 'auto',
-                        // backgroundColor: '#1F3E5A',
                         display: 'flex',
                         flexDirection: 'row',
                         justifyContent: 'center',
@@ -24,7 +37,7 @@ function Card() {
                         gap: '30px',
                     }}>
                     {
-                        cards.map((x) => {
+                        cards.map((card, index) => {
                             return (
                                 <Box className='card-body' __css={{
                                     width: '300px',
@@ -60,7 +73,7 @@ function Card() {
                                             alignItems: 'center',
                                         }
                                     }>
-                                        <img src={x.src} alt="" />
+                                        <img src={card.src} alt="" />
                                     </Box>
                                     <Box __css={
                                         {
@@ -71,7 +84,7 @@ function Card() {
                                             margin: '7.5px',
                                         }
                                     } className="card-title">
-                                        {x.title}
+                                        {card.title}
                                     </Box>
                                     <Box className="number_of_projects" __css={
                                         {
@@ -81,28 +94,68 @@ function Card() {
                                             color: 'rgb(0, 0, 0)',
                                         }
                                     }>
-                                        {x.no_of_projects}
+                                        {card.no_of_projects}
                                     </Box>
 
-                                    <Button colorScheme='blue' className='view-project' __css={
-                                        {
-                                            width: '180px',
-                                            height: '44px',
-                                            fontWeight: '500',
-                                            fontSize: '20px',
-                                            marginTop: '2.5%',
-                                            border: '2px solid #1F3E5A !important',
-                                            background: 'transparent !important',
-                                            borderRadius: '5px',
-                                            color: 'black !important',
-                                        }
-                                    }>View projects</Button>
+                                    <Button colorScheme='blue'
+                                        onClick={() => {
+                                            setContentOfModal(card.projects)
+                                            onOpen()
+                                        }}
+                                        className='view-project' __css={
+                                            {
+                                                width: '180px',
+                                                height: '44px',
+                                                fontWeight: '500',
+                                                fontSize: '20px',
+                                                marginTop: '2.5%',
+                                                border: '2px solid #1F3E5A !important',
+                                                background: 'transparent !important',
+                                                borderRadius: '5px',
+                                                color: 'black !important',
+                                            }
+                                        }>View projects</Button>
                                 </Box>
                             )
                         })
                     }
                 </Box>
             </Box>
+            {
+
+
+                <Modal isOpen={isOpen} onClose={onClose} maxW="800px" isCentered>
+                    <ModalOverlay />
+                    <ModalContent maxW="800px">
+                        <ModalHeader>All Projects</ModalHeader>
+                        <ModalCloseButton />
+                        <Box className='single-project-wrapper' >
+                            {
+
+
+                                contentOfModal.map((projectDetails) => {
+                                    return (
+                                        <Box className="single-project" mb="20px">
+                                            <Text>{projectDetails.name}</Text>
+                                            <Button className='view-project-btn'variant='outline'>View Project</Button>
+                                        </Box>
+                                    )
+
+                                })
+
+
+
+                            }
+                        </Box>
+                    </ModalContent>
+                </Modal>
+
+
+
+
+            }
+
+
         </>
     )
 }
