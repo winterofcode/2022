@@ -140,7 +140,7 @@
 .single-project-wrapper {
     width: 100%;
     max-width: 600px;
-    height: 300px;
+    height: 380px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -148,10 +148,12 @@
 
     gap: 5px;
 
-    overflow-y: hidden;
-    overflow-x: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    flex-wrap: wrap;
 
     padding: 15px;
+    
 }
 
 .single-project {
