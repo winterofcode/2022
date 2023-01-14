@@ -7,6 +7,14 @@ const cards = [
             {
                 "name": "projetc1",
                 "link": "projectlink.com"
+            },
+            {
+                "name": "projetc1",
+                "link": "projectlink.com"
+            },
+            {
+                "name": "projetc1",
+                "link": "projectlink.com"
             }
         ]
     },
@@ -17,6 +25,10 @@ const cards = [
         "projects": [
             {
                 "name": "projetc",
+                "link": "projectlink.com"
+            },
+            {
+                "name": "projetc1",
                 "link": "projectlink.com"
             }
         ]
