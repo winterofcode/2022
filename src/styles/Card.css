@@ -116,7 +116,7 @@
 
 .single-project-wrapper {
     width: 100%;
-    max-width: 600px;
+    /* max-width: 600px; */
     height: 380px;
     display: flex;
     flex-direction: row;
@@ -136,12 +136,12 @@
 .single-project {
     width: 220px;
     height: 220px;
-    border: 1px solid black;
+    border: 1px solid rgb(197, 197, 197);
     background-color:transparent;
     border-radius: 10px;
     margin-left: 10px;
     margin-right: 10px;
-
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.196);
     flex-shrink: 0;
 
     background-image: url("../assets/orgLogo2.png");

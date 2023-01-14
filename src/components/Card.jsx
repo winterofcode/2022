@@ -124,9 +124,9 @@ function Card() {
             {
 
 
-                <Modal isOpen={isOpen} onClose={onClose}>
+                <Modal isOpen={isOpen} onClose={onClose} maxW="800px" isCentered>
                     <ModalOverlay />
-                    <ModalContent>
+                    <ModalContent maxW="800px">
                         <ModalHeader>All Projects</ModalHeader>
                         <ModalCloseButton />
                         <Box className='single-project-wrapper' >
@@ -135,7 +135,7 @@ function Card() {
 
                                 contentOfModal.map((projectDetails) => {
                                     return (
-                                        <Box className="single-project">
+                                        <Box className="single-project" mb="20px">
                                             <Text>{projectDetails.name}</Text>
                                             <Button className='view-project-btn'variant='outline'>View Project</Button>
                                         </Box>

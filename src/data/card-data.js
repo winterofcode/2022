@@ -15,7 +15,15 @@ const cards = [
             {
                 "name": "projetc1",
                 "link": "projectlink.com"
-            }
+            },
+            {
+                "name": "projetc1",
+                "link": "projectlink.com"
+            },
+            {
+                "name": "projetc1",
+                "link": "projectlink.com"
+            },
         ]
     },
     {
