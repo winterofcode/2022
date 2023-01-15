@@ -2,7 +2,7 @@
   "name": "2022",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://winterofcode.com/#",
+  "homepage": "https://winterofcode.com/#/",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.12",
     "@chakra-ui/react": "^2.3.7",
