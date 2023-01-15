@@ -1,4 +1,5 @@
 import brishti from "../assets/team/brishti.webp"
+import debobrata from "../assets/team/debobrata.webp"
 import sayanS from "../assets/team/SayanS.webp"
 import biswa from "../assets/team/biswa.webp"
 import shreyam from "../assets/team/shreyam.webp"
@@ -16,7 +17,7 @@ import defaultDp from "../assets/default_dp.webp"
 
 export const data = [
     {name: "Brishti Saha", desg: "GDSC Lead", img: brishti, socialL: [{ isPres: "GIT", Slink: "https://github.com/BrishtiSaha"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/brishti-saha-731334200/"}]},
-    {name: "Debobrata Patra", desg: "Design Lead", img: defaultDp, socialL: [{ isPres: "GIT", Slink: "https://www.github.com"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com"}, {isPres: "TWIT", Slink: "https://www.twitter.com"}]},
+    {name: "Debobrata Patra", desg: "Design Lead", img: debobrata, socialL: [{isPres: "LINKEDIN", Slink: "https://www.linkedin.com/mwlite/in/debobrata-patra-79b173224"}]},
     {name: "Sayan Samanta", desg: "Web Team Lead", img: sayanS, socialL: [{ isPres: "GIT", Slink: "https://www.github.com/SayanDeveloper"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/sayandeveloper/"}]},
     {name: "Biswarghya Biswas", desg: "Web Team Co-Lead", img: biswa, socialL: [{ isPres: "GIT", Slink: "https://github.com/lazyfuhrer"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/biswarghya-biswas/"}, {isPres: "TWIT", Slink: "https://twitter.com/BiswarghyaB"}]},
     {name: "Shreyam Maity", desg: "App Team Lead", img: shreyam, socialL: [{ isPres: "GIT", Slink: "https://github.com/shreyammaity"}, {isPres: "LINKEDIN", Slink: "https://linkedin.com/in/shreyammaity"}, , {isPres: "TWIT", Slink: "https://twitter.com/ShreyamMaity"}]},
