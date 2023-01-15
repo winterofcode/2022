@@ -4,6 +4,7 @@ import sayanS from "../assets/team/SayanS.webp"
 import biswa from "../assets/team/biswa.webp"
 import shreyam from "../assets/team/shreyam.webp"
 import yash from "../assets/team/yash.webp"
+import imon from "../assets/team/imon.webp"
 import debojit from "../assets/team/debojit.webp"
 import udatya from "../assets/team/udatya.webp"
 import gairik from "../assets/team/gairik.webp"
@@ -13,16 +14,15 @@ import somnath from "../assets/team/somnath.webp"
 import sayanG from "../assets/team/SayanG.webp"
 import debanita from "../assets/team/debanita.webp"
 import pubali from "../assets/team/pubali.webp"
-import defaultDp from "../assets/default_dp.webp"
 
 export const data = [
     {name: "Brishti Saha", desg: "GDSC Lead", img: brishti, socialL: [{ isPres: "GIT", Slink: "https://github.com/BrishtiSaha"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/brishti-saha-731334200/"}]},
     {name: "Debobrata Patra", desg: "Design Lead", img: debobrata, socialL: [{isPres: "LINKEDIN", Slink: "https://www.linkedin.com/mwlite/in/debobrata-patra-79b173224"}]},
     {name: "Sayan Samanta", desg: "Web Team Lead", img: sayanS, socialL: [{ isPres: "GIT", Slink: "https://www.github.com/SayanDeveloper"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/sayandeveloper/"}]},
     {name: "Biswarghya Biswas", desg: "Web Team Co-Lead", img: biswa, socialL: [{ isPres: "GIT", Slink: "https://github.com/lazyfuhrer"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/biswarghya-biswas/"}, {isPres: "TWIT", Slink: "https://twitter.com/BiswarghyaB"}]},
-    {name: "Shreyam Maity", desg: "App Team Lead", img: shreyam, socialL: [{ isPres: "GIT", Slink: "https://github.com/shreyammaity"}, {isPres: "LINKEDIN", Slink: "https://linkedin.com/in/shreyammaity"}, , {isPres: "TWIT", Slink: "https://twitter.com/ShreyamMaity"}]},
+    {name: "Shreyam Maity", desg: "App Team Lead", img: shreyam, socialL: [{ isPres: "GIT", Slink: "https://github.com/shreyammaity"}, {isPres: "LINKEDIN", Slink: "https://linkedin.com/in/shreyammaity"}, {isPres: "TWIT", Slink: "https://twitter.com/ShreyamMaity"}]},
     {name: "Yash Shaw", desg: "PR Lead", img: yash, socialL: [{isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/yshaw2002"}]},
-    {name: "Imon Kallyan Roy", desg: "Cloud Team Co-Lead", img: defaultDp, socialL: [{ isPres: "GIT", Slink: "https://www.github.com"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com"}]},
+    {name: "Imon Kalyan Roy", desg: "Cloud Team Co-Lead", img: imon, socialL: [{ isPres: "GIT", Slink: "https://github.com/unownone"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/imon--roy/"}, {isPres: "TWIT", Slink: "https://twitter.com/unown1ne"}]},
     {name: "Debojit Saha", desg: "Web Team", img: debojit, socialL: [{ isPres: "GIT", Slink: "https://github.com/debojitsaha"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/debojit-saha/"}, {isPres: "TWIT", Slink: "https://twitter.com/star_debojit"}]},
     {name: "Udatya Deb", desg: "Web Team", img: udatya, socialL: [{ isPres: "GIT", Slink: "https://github.com/UDATYA-DEB"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/udatya-deb-604785200"}, {isPres: "TWIT", Slink: "https://twitter.com/UdatyaDeb"}]},
     {name: "Gairik Sharma", desg: "Web Team", img: gairik, socialL: [{ isPres: "GIT", Slink: "https://github.com/GairikSharma/"}, {isPres: "LINKEDIN", Slink: "https://www.linkedin.com/in/gairik-sharma-1633b4223/"}]},
