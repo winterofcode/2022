@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import "./App.css";
 import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,

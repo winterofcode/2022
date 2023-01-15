@@ -122,7 +122,7 @@ export default function Navbar() {
                 <ChakraLink
                   px={2}
                   py={1}
-                  href='/#organizations'
+                  href='/#/#organizations'
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'
@@ -135,7 +135,7 @@ export default function Navbar() {
                 <ChakraLink
                   px={2}
                   py={1}
-                  href='/#faq'
+                  href='/#/#faq'
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'
