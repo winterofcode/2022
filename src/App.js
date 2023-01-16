@@ -39,7 +39,7 @@ function App() {
                     </Routes>
                 </Suspense>
             </Router>
-            {/* <Footer /> */}
+            <Footer />
         </ChakraProvider>
     );
 }

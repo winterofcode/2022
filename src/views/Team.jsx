@@ -13,7 +13,7 @@ import Footer from '../components/Footer';
 const Team = () => {
     return (
         <>
-            <Navbar />
+            {/* <Navbar /> */}
             <Box className='teams-container'>
                 <Bg />
                 <Heading p='50px' pt="120px" fontSize='5xl' color='white' zIndex={1} pos="relative" textAlign='center'>Our Team</Heading>
@@ -21,7 +21,7 @@ const Team = () => {
                     <Cards />
                 </Flex>
             </Box>
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }

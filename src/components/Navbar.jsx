@@ -20,29 +20,29 @@ export default function Navbar() {
   const [color, setColor] = useState(false);
 
   const changeColor = () => {
-    if (window.scrollY >= 700) {
-      setColor(true);
-    } else {
-      setColor(false);
+    if (location.pathname === "/") {
+      window.scrollY >= 700 ? setColor(true) : setColor(false)
     }
   }
   
   useEffect(() => {
-    location.pathname === "/" && isOpen ? setColor(true) : setColor(false)
+    if (location.pathname === "/") {
+      isOpen && setColor(true)
+      !isOpen && window.scrollY < 700 && setColor(false)
+    }
   }, [isOpen])
-  
+
   useEffect(() => {
     if (location.pathname === "/") {
       window.addEventListener('scroll', changeColor);
     } else {
       setColor(true)
     }
-    return () => window.removeEventListener("scroll", changeColor);
-  }, [])
+  }, [location.pathname])
 
   return (
     <>
-      <Box className={color ? 'Navbar-scrolled' : 'Navbar'} px={{base: '4', md: '20'}} pos='fixed' zIndex={1000} w={'100vw'}>
+      <Box className={(color || location.pathname === "/organisers") ? 'Navbar-scrolled' : 'Navbar'} px={{base: '4', md: '20'}} pos='fixed' zIndex={1000} w={'100vw'}>
         <style>
           {`
             .Navbar {
@@ -122,7 +122,7 @@ export default function Navbar() {
                 <ChakraLink
                   px={2}
                   py={1}
-                  href='/#/#organizations'
+                  href='/#organizations'
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'
@@ -135,7 +135,7 @@ export default function Navbar() {
                 <ChakraLink
                   px={2}
                   py={1}
-                  href='/#/#faq'
+                  href='/#faq'
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'
@@ -167,17 +167,19 @@ export default function Navbar() {
                   GDSC NSEC
                 </ChakraLink>
                 <ChakraLink
-                  href="/organisers"
                   px={2}
                   py={1}
                   fontWeight={'500'}
                   rounded={'md'}
                   color='white'
+                  onClick={() => onClose()}
                   _hover={{
                     textDecoration: 'none',
                     color: '#4285F4',
                   }}>
-                  Team
+                  <Link to="/organisers">
+                    Team
+                  </Link>
                 </ChakraLink>
                 <ChakraLink
                   px={2}
