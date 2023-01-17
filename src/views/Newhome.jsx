@@ -48,7 +48,7 @@ const NewHome=()=>{
             <Card />
             <Timeline />
             <Faq />
-            <Footer />
+            {/* <Footer /> */}
         </>
     )
 }
