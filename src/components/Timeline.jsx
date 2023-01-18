@@ -179,7 +179,7 @@ export default function Timeline() {
                 iconStyle={{ background: '#FBBC05', color: '#fff' }}
                 contentStyle={{color : "white"}}
                 dateClassName="timeline-date-mobile-font"
-                date="Completion of WOC'22"
+                date="Completion of WOC'23"
                 icon={<CircleStarFull/>}
             />
         </VerticalTimeline>
