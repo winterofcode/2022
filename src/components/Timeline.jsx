@@ -16,73 +16,73 @@ export default function Timeline() {
         {
             id : 1,
             bgIconColor : "#EA4335",
-            dateVal : "10th November, 2022",
-            title : "Project Application Starts",
-            description : "Within this period various organisations submit their project proposal."
+            dateVal : "20th January, 2023",
+            title : " First contact with Companies established",
+            description : "Finishing off contact with organizations and communities involved."
         },
         {
             id : 2,
             bgIconColor : "#FBBC05",
-            dateVal : "23rd November, 2022",
-            title : "Organisations Announced",
-            description : "The Organisations selected for the event will be announced."
+            dateVal : "23th January, 2023",
+            title : "Project publication and Student registration starts",
+            description : "All the projects will be published and registration for students will be started."
         },
         {
             id : 3,
             bgIconColor : "#4285F4",
-            dateVal : "25th November - 12th December, 2022",
-            title : "Student Application Starts",
-            description : "Students select their organisations and apply to them during this period."
+            dateVal : "29th January, 2023",
+            title : "Promos about WOC, Proposals and Screening Process",
+            description : "Promotions about WOC, Proposals and Screening Process will be published on all social media platforms."
         },
         {
             id : 4,
             bgIconColor : "#34A853",
-            dateVal : "14th December, 2022",
-            title : "Students announced, projects matched by organisations",
-            description : "Students receive an email regarding their selection and are assigned projects by their respective organisation."
+            dateVal : "12th February, 2023",
+            title : "Finalizing Video promos, Proposals and Registrations for Organizations",
+            description : "Video promos, proposals and registrations for Organizations will be finalized."
         },
-        // {
-        //     id : 5,
-        //     bgIconColor : "#EA4335",
-        //     dateVal : "14th December - 16th December, 2022",
-        //     title : "Community Bonding period",
-        //     description : "Students come to know of their respective Organisations. Mentors are assigned. Strategies and approaches towards their project are discussed over platforms like slack."
-        // },
-        // {
-        //     id : 6,
-        //     bgIconColor : "#FBBC05",
-        //     dateVal : "16th December - 29th December, 2022",
-        //     title : "Phase 1",
-        //     description : "The First round of tasks are handed out regarding the projects."
-        // },
-        // {
-        //     id : 7,
-        //     bgIconColor : "#4285F4",
-        //     dateVal : "30th December - 31st December, 2022",
-        //     title : "First Evaluation",
-        //     description : "The process of students is assessed."
-        // },
-        // {
-        //     id : 8,
-        //     bgIconColor : "#34A853",
-        //     dateVal : "1st January - 11th January, 2022",
-        //     title : "Phase 2",
-        //     description : "Second round of tasks is assigned."
-        // },
-        // {
-        //     id : 9,
-        //     bgIconColor : "#EA4335",
-        //     dateVal : "12th January - 13th January, 2022",
-        //     title : "Second Evaluation",
-        //     description : "Final evaluation is done based on the outcome of the assigned tasks."
-        // },
-        // {
-        //     id : 10,
-        //     bgIconColor : "#FBBC05",
-        //     dateVal : "20th January, 2022",
-        //     title : "Successful Students Announced",
-        //     description : "Name of students who have successfully completed the event will be announced."
-        // }
+        {
+            id : 5,
+            bgIconColor : "#EA4335",
+            dateVal : "15th February, 2023",
+            title : "Networking event for Organizations and Students",
+            description : "A networking event will be held for the students and organisations to get to know each other."
+        },
+        {
+            id : 6,
+            bgIconColor : "#FBBC05",
+            dateVal : "16th February, 2023",
+            title : "Proposal submissions Start",
+            description : "Students will be able to submit their proposals for the projects."
+        },
+        {
+            id : 7,
+            bgIconColor : "#4285F4",
+            dateVal : "22nd February, 2023",
+            title : "Proposal submissions end and Screening starts",
+            description : "Proposal submissions will be closed and the screening process will start."
+        },
+        {
+            id : 8,
+            bgIconColor : "#34A853",
+            dateVal : "25th February, 2023",
+            title : "Project starts",
+            description : "Selected students will be assigned to the projects and the project will start."
+        },
+        {
+            id : 9,
+            bgIconColor : "#EA4335",
+            dateVal : "13th March, 2023",
+            title : "Project review starts",
+            description : "Review of the projects will be started by the organisations."
+        },
+        {
+            id : 10,
+            bgIconColor : "#FBBC05",
+            dateVal : "25th March, 2023",
+            title : "Project submission",
+            description : "Students will be able to submit their projects."
+        }
 
     ]
     
@@ -139,7 +139,7 @@ export default function Timeline() {
         <Box display="flex" justifyContent="center">
             <VStack>
             <TriangleDownIcon boxSize={7} color="white" padding={0} margin={0}/>
-            <Text fontWeight="semibold" fontSize="20px" color="rgba(255, 255, 255, 0.7)">Completion of WOC 2022</Text>
+            <Text fontWeight="semibold" fontSize="20px" color="rgba(255, 255, 255, 0.7)">Completion of WOC 2023</Text>
             </VStack>
         </Box>
     </Box>
