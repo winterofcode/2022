@@ -28,18 +28,19 @@ function App() {
         <ChakraProvider initialColorMode={theme.config.initialColorMode}>
             <Router>
                 <Navbar />
-                <Suspense>
-                    <Routes>
-                        <Route exact path="/" element={<Home/>} />
-                        <Route exact path="/organisers" element={<Team />} />
-                        <Route
-                            path="*"
-                            element={<Navigate to="/" replace />}
-                        />
-                    </Routes>
-                </Suspense>
+                    <Suspense>
+                        <Routes>
+                            <Route exact path="/" element={<Home/>} />
+                            <Route exact path="/organisers" element={<Team />} />
+                            <Route
+                                path="*"
+                                element={<Navigate to="/" replace />}
+                            />
+                        </Routes>
+                    </Suspense>
+                <Footer />
             </Router>
-            <Footer />
+            
         </ChakraProvider>
     );
 }
