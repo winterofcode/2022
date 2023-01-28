@@ -14,6 +14,7 @@ function Apply() {
 
                     <Box className='apply-btns' mt={4}>
                         <Button color="white" colorScheme='twitter' ml={2} mt={2} className="apply-btn">APPLY AS ORGANISATION</Button>
+                        <Button color="white" colorScheme='twitter' ml={2} mt={2} className="apply-btn">APPLY AS COMMUNITY PARTNER</Button>
                         <Button color="white" colorScheme='twitter'ml={2} mt={2} className="apply-btn">APPLY AS MENTOR</Button>
                         <Button color="white" colorScheme='twitter'ml={2} mt={2} className="apply-btn">APPLY AS STUDENT</Button>
                     </Box>
