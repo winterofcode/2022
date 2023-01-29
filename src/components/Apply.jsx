@@ -1,6 +1,6 @@
 import React from 'react'
 import "../styles/Apply.css"
-import { Box, Heading, Text, Button } from '@chakra-ui/react'
+import { Box, Heading, Text, Button, Link, Flex } from '@chakra-ui/react'
 
 function Apply() {
     return (
@@ -12,12 +12,12 @@ function Apply() {
                     
                     <Text lineHeight={2} mt={1} color='black' className='timeline-text-section text'><Text className='text'>Check the <span className='timeline'>Timeline</span> section.</Text> Applications will open on the mentioned date.</Text>
 
-                    <Box className='apply-btns' mt={4}>
-                        <Button color="white" colorScheme='twitter' ml={2} mt={2} className="apply-btn">APPLY AS ORGANISATION</Button>
+                    <Flex className='apply-btns' mt={4}>
+                        <Link p="8px 20px" fontWeight={600} href='https://register.winterofcode.com/' target="_blank" color="white" colorScheme='twitter' ml={2} mt={2} className="apply-btn">APPLY AS ORGANISATION</Link>
                         <Button color="white" colorScheme='twitter' ml={2} mt={2} className="apply-btn">APPLY AS COMMUNITY PARTNER</Button>
                         <Button color="white" colorScheme='twitter'ml={2} mt={2} className="apply-btn">APPLY AS MENTOR</Button>
                         <Button color="white" colorScheme='twitter'ml={2} mt={2} className="apply-btn">APPLY AS STUDENT</Button>
-                    </Box>
+                    </Flex>
                 </Box>
             </Box>
         </>

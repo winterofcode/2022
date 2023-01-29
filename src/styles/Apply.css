@@ -35,6 +35,11 @@
 .apply-btn {
     background: #088C7F !important;
     border-radius: 15px !important;
+    align-self: center;
+    text-align: center;
+}
+.apply-btn:hover {
+    text-decoration: none !important;
 }
 
 @media (max-width: 600px) {
