@@ -24,62 +24,62 @@ export default function Timeline() {
             id : 2,
             bgIconColor : "#FBBC05",
             dateVal : "23th January, 2023",
-            title : "Project publication and Student registration starts",
-            description : "All the projects will be published and registration for students will be started."
+            title : "Organisation Project registration starts",
+            description : "Organisations will be able to register their project under WoC."
         },
         {
             id : 3,
-            bgIconColor : "#4285F4",
-            dateVal : "29th January, 2023",
-            title : "Promos about WOC, Proposals and Screening Process",
-            description : "Promotions about WOC, Proposals and Screening Process will be published on all social media platforms."
-        },
-        {
-            id : 4,
             bgIconColor : "#34A853",
             dateVal : "12th February, 2023",
             title : "Finalizing Video promos, Proposals and Registrations for Organizations",
             description : "Video promos, proposals and registrations for Organizations will be finalized."
         },
         {
-            id : 5,
+            id : 4,
             bgIconColor : "#EA4335",
             dateVal : "15th February, 2023",
-            title : "Networking event for Organizations and Students",
-            description : "A networking event will be held for the students and organisations to get to know each other."
+            title : "Organization Registration ends",
+            description : "Registration for projects under organisation ends."
         },
         {
-            id : 6,
+            id : 5,
             bgIconColor : "#FBBC05",
-            dateVal : "16th February, 2023",
+            dateVal : "17th February, 2023",
             title : "Proposal submissions Start",
             description : "Students will be able to submit their proposals for the projects."
         },
         {
-            id : 7,
+            id : 6,
             bgIconColor : "#4285F4",
-            dateVal : "22nd February, 2023",
+            dateVal : "27th February, 2023",
             title : "Proposal submissions end and Screening starts",
             description : "Proposal submissions will be closed and the screening process will start."
         },
         {
-            id : 8,
+            id : 7,
             bgIconColor : "#34A853",
-            dateVal : "25th February, 2023",
-            title : "Project starts",
-            description : "Selected students will be assigned to the projects and the project will start."
+            dateVal : "3rd March, 2023",
+            title : "Students Announced",
+            description : "Selected students will be announced to the projects."
+        },
+        {
+            id : 8,
+            bgIconColor : "#4285F4",
+            dateVal : "6th March, 2023",
+            title : "Student Contribution Starts",
+            description : "Selected students will be starting to contribute to the assigned projects."
         },
         {
             id : 9,
             bgIconColor : "#EA4335",
-            dateVal : "13th March, 2023",
-            title : "Project review starts",
-            description : "Review of the projects will be started by the organisations."
+            dateVal : "17th March, 2023",
+            title : "Project evaluation",
+            description : "Review of the students contribution will be shared by the organisations."
         },
         {
             id : 10,
             bgIconColor : "#FBBC05",
-            dateVal : "25th March, 2023",
+            dateVal : "28th March, 2023",
             title : "Project submission",
             description : "Students will be able to submit their projects."
         }
