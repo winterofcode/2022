@@ -106,6 +106,7 @@ font-weight:600;
 font-size: 1.5rem;
 font-family: Poppins;
 color: white;
+padding: 5px 30px;
 animation: 3s btn-ani;
 cursor: pointer;
   }
@@ -207,7 +208,7 @@ cursor: pointer;
     top:calc(20vh + 5rem + 9.5em)
   }
   .wreg{
-    font-size: 2rem;
+    font-size: 1.6rem;
     width:304px;
   }
   .rtree{

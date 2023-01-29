@@ -27,7 +27,7 @@ const NewHome=()=>{
                 <span className="slide-r">code</span>
                 </div>
                 <div className="reg-btn">
-                <button className="wreg">Register Now</button>
+                <a href="https://register.winterofcode.com/" target="_blank" className="wreg">Register Now</a>
                 </div>
             
                 <div className="ltree-2">
